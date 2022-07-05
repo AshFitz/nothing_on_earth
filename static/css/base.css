@@ -1,16 +1,41 @@
 html {
     height: 100%;
+    width: 100%;
+}
+
+body {
+    width: fit-content;
 }
 
 video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
 
 header {
     background-color: white;
+}
+.shop-now-container {
+    position: absolute;
+    top: 75vh;
+    left: 47vw;
+}
+
+.shop-now-button {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page-container {
+    position: relative;
+    overflow-x: hidden;
+
 }

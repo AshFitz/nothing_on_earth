@@ -28,28 +28,30 @@
       <div class="row">
         <div class="col-12 col-lg-4 my-auto py-2 text-center">
           <a>
-            <h1>Nothing On Earth</h1>
+            {% include 'includes/products-nav.html' %}
           </a>
         </div>
-        <div class="col-12 col-lg-4 my-auto py-2">
+        <div class="col-12 col-lg-4 my-auto py-2 text-center">
+          <h1>Nothing On Earth</h1>
+        </div>
+        <!-- <div class="col-12 col-lg-4 my-auto py-2">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
-        </div>
-      
+        </div> -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-
-        <nav class="navbar navbar-expand-lg ">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light float-right">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#admin-nav" aria-controls="admin-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse" id="admin-nav">
             <div class="navbar-nav">
+              <a class="nav-link" href="#">Search</a>
+              <a class="nav-link" href="#">Bag</a>
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a class="nav-link active" href="#">Product Management <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#">Management <span class="sr-only">(current)</span></a>
               {% endif %}
               <a class="nav-link" href="#">Profile</a>
               <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
@@ -60,20 +62,6 @@
             </div>
           </div>
         </nav>
-
-
-                  <!-- <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                      <div class="text-center">
-                          <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                          <p class="my-0">
-                              {% if grand_total %}
-                                  ${{ grand_total|floatformat:2 }}
-                              {% else %}
-                                  $0.00
-                              {% endif %}
-                          </p>
-                      </div> -->
-
       </div>
     </header>
 
