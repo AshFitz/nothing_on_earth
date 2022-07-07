@@ -1,0 +1,42 @@
+[
+    {
+      "pk": 1,
+      "model": "products.collection",
+      "fields": {
+        "name": "crop_meadow",
+        "friendly_name": "Crop Meadow"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.collection",
+      "fields": {
+        "name": "bloom_spring",
+        "friendly_name": "Bloom Spring"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.collection",
+      "fields": {
+        "name": "beach_gaze",
+        "friendly_name": "Beach Gaze"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.collection",
+      "fields": {
+        "name": "eden_balcony",
+        "friendly_name": "Eden Balcony"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.collection",
+      "fields": {
+        "name": "shell_bay",
+        "friendly_name": "Shell Bay"
+      }
+    }
+  ]

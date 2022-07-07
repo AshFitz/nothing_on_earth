@@ -1,0 +1,322 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0001",
+        "name": "Crop Meadow Floral Puff Dress",
+        "description": "Midi yellow floral dress with puff sleeves and open back",
+        "details": "60% Nylon, 40% polyester",
+        "price": 125,
+        "collection": 1,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD239CRM_1_1800x1800.jpg?v=1638889582",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD239CRM_4_1800x1800.jpg?v=1638889587",
+        "image": "col1_d1f.jpg",
+        "image2": "col1_d1b.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0002",
+        "name": " Crop Meadow Sequined Mini Dress",
+        "description": "Mini sequined lemon dress with baloon sleeves and check pattern",
+        "details": "20% Nylon, 80% polyester",
+        "price": 100,
+        "collection": 1,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD244YLW_1_1800x1800.jpg?v=1638890037",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD244YLW_4_1800x1800.jpg?v=1638890043",
+        "image": "col1_d2f.jpg",
+        "image2": "col1_d2b.jpg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0003",
+        "name": "Crop Meadow Textured Midi Dress",
+        "description": "Midi pink textured dress with cold shoulder baloon sleeves and pockets",
+        "details": "100% polyester",
+        "price": 110,
+        "collection": 1,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD240PNK_1_1800x1800.jpg?v=1638889660",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD240PNK_4_1800x1800.jpg?v=1638889666",
+        "image": "col1_d3f.jpg",
+        "image2": "col1_d3b.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0004",
+        "name": "Crop Meadow Tiered Maxi Dress",
+        "description": "Oversized ivory tiered maxi dress with adjustable bow tie shoulder straps",
+        "details": "100% polyester",
+        "price": 140,
+        "collection": 1,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD251IVO_1_1800x1800.jpg?v=1638890307",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD251IVO_4_1800x1800.jpg?v=1638890313",
+        "image": "col1_d4f.jpg",
+        "image2": "col1_d4b.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0005",
+        "name": "Bloom Spring Collard Maxi Dress",
+        "description": "Ivory cotton maxi dress with oversized beaded collar and pockets",
+        "details": "70% cotton, 30% Nylon",
+        "price": 150,
+        "collection": 2,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD262IVO_1_1800x1800.jpg?v=1641824483",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD262IVO_4_1800x1800.jpg?v=1641824487",
+        "image": "col2_d1f.jpg",
+        "image2": "col2_d1b.jpg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0006",
+        "name": "Bloom Spring Jacquarad Midi Dress",
+        "description": "Ivory jacquarad midi dress with lemon floral pattern and open back tie",
+        "details": "100% polyester",
+        "price": 170,
+        "collection": 2,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD263IVO_1_1800x1800.jpg?v=1641824974",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD263IVO_4_1800x1800.jpg?v=1641824978",
+        "image": "col2_d2f.jpg",
+        "image2": "col2_d2b.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0007",
+        "name": "Bloom Spring Sweetheart Midi Dress",
+        "description": "Pink jacquarad midi dress with sweatheart neckline and baloon sleeves",
+        "details": "100% polyester",
+        "price": 200,
+        "collection": 2,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD260PNK_1_1800x1800.jpg?v=1641824352",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD260PNK_4_1800x1800.jpg?v=1641824356",
+        "image": "col2_d3f.jpg",
+        "image2": "col2_d3b.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0008",
+        "name": "Bloom Spring Gingham Maxi Dress",
+        "description": "Bright yellow gingham tiered maxi dress with black bow details",
+        "details": "90% cotton, 10% nylon",
+        "price": 200,
+        "collection": 2,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD256YLW_1_1800x1800.jpg?v=1641824061",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD256YLW_4_1800x1800.jpg?v=1641824065",
+        "image": "col2_d4f.jpg",
+        "image2": "col2_d4b.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp0009",
+        "name": "Beach Gaze Jacquarad Midi Dress",
+        "description": "Ivory heart jacquarad midi dress with puff sleeves and back bow tie",
+        "details": "100% polyester",
+        "price": 190,
+        "collection": 3,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1614IVO_1_1800x1800.jpg?v=1648108885",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1614IVO_4_1800x1800.jpg?v=1648108893",
+        "image": "col3_d1f.jpg",
+        "image2": "col3_d1b.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00010",
+        "name": "Beach Gaze Briodery Midi Dress",
+        "description": "Black briodery midi dress with oversized cut out collar",
+        "details": "100% cotton",
+        "price": 100,
+        "collection": 3,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1630BLK_1_1800x1800.jpg?v=1648109096",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1630BLK_4_1800x1800.jpg?v=1648109102",
+        "image": "col3_d2f.jpg",
+        "image2": "col3_d2b.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00011",
+        "name": "Beach Gaze Smock Mini Dress",
+        "description": "Oversized pink spotted smock dress with drop shoulders",
+        "details": "70% nylon, 30% polyester",
+        "price": 85,
+        "collection": 3,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1630PNK_1_1800x1800.jpg?v=1648109457",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1630PNK_4_1800x1800.jpg?v=1648109463",
+        "image": "col3_d3f.jpg",
+        "image2": "col3_d3b.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00012",
+        "name": "Floral Midi Dress",
+        "description": "Beach Gaze Red floral midi dress with open back and black bow ties",
+        "details": "100% polyester",
+        "price": 95,
+        "collection": 3,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1635RED_1_1800x1800.jpg?v=1648108950",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DR1635RED_4_1800x1800.jpg?v=1648108955",
+        "image": "col3_d4f.jpg",
+        "image2": "col3_d4b.jpg"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00013",
+        "name": "Eden Balcony Floral Maxi Dress",
+        "description": "High neck ivory midi dress with bold coloured floral pattern and oversized sleeves",
+        "details": "100% polyester",
+        "price": 210,
+        "collection": 4,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/9946_Image1_1800x1800.jpg?v=1651832015",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD595MUL_4_1800x1800.jpg?v=1651835161",
+        "image": "col4_d1f.jpg",
+        "image2": "col4_d1b.jpg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00014",
+        "name": "Eden Balcony Monochrome Mini Dress",
+        "description": "Oversized smock mini dress with monochrome pattern and black bow straps",
+        "details": "100% polyester",
+        "price": 200,
+        "collection": 4,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/9955_Image1_1800x1800.jpg?v=1651832139",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD601BNW_4_1800x1800.jpg?v=1651835529",
+        "image": "col4_d2f.jpg",
+        "image2": "col4_d2b.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00015",
+        "name": "Eden Balcony Textured Mini Dress",
+        "description": "Oversized ivory textured mini dress with ruffle details and pearl neckline",
+        "details": "100% polyester",
+        "price": 200,
+        "collection": 4,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/9951_Image1_1800x1800.jpg?v=1651832120",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD597IVO_4_1800x1800.jpg?v=1651835347",
+        "image": "col4_d3f.jpg",
+        "image2": "col4_d3b.jpg"
+      }
+    },
+     {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00016",
+        "name": "Eden Balcony Textured Babydoll Dress",
+        "description": "Oversized pink textured babydoll dress with velvet bow straps",
+        "details": "90% polyester, 10% nylon",
+        "price": 165,
+        "collection": 4,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/9952_Image1_1800x1800.jpg?v=1651832106",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD598PNK_4_1800x1800.jpg?v=1651835388",
+        "image": "col4_d4f.jpg",
+        "image2": "col4_d4b.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00017",
+        "name": "Shell Bay Jacquarad Maxi Dress",
+        "description": "Peach jacquarad maxi dress with sweatheart neckline and puff sleeves",
+        "details": "100% polyester",
+        "price": 225,
+        "collection": 5,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD574NUD_1_1800x1800.jpg?v=1648109551",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD574NUD_4_1800x1800.jpg?v=1648109557",
+        "image": "col5_d1f.jpg",
+        "image2": "col5_d1b.jpg"
+      }
+    },
+      {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00018",
+        "name": "Shell Bay Vintage Maxi Dress",
+        "description": "Vintage ivory satin maxi dress with plunge neckline and oversized bow",
+        "details": "100% viscose",
+        "price": 220,
+        "collection": 5,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD266IVO_1_1800x1800.jpg?v=1648109443",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD266IVO_4_1800x1800.jpg?v=1648109448",
+        "image": "col5_d2f.jpg",
+        "image2": "col5_d2b.jpg"
+      }
+    },
+     {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00019",
+        "name": "Shell Bay Ruffle Mini Dress",
+        "description": "Polka dot tiered ruffle mini dress with puff sleeves",
+        "details": "100% polyester",
+        "price": 240,
+        "collection": 5,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD582BNW_1_1800x1800.jpg?v=1648109609",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD582BNW_4_1800x1800.jpg?v=1648109614",
+        "image": "col5_d3f.jpg",
+        "image2": "col5_d3b.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp00020",
+        "name": "Shell Bay Jacquard Midi Dress",
+        "description": "Jacquarad midi dress with pockets and pink and yellow floral pattern",
+        "details": "60% polyester, 40% nylon",
+        "price": 210,
+        "collection": 5,
+        "image_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD589FUS_1_1800x1800.jpg?v=1648109749",
+        "image2_url": "https://cdn.shopify.com/s/files/1/0507/7349/1898/products/DRD589FUS_4_1800x1800.jpg?v=1648109754",
+        "image": "col5_d4f.jpg",
+        "image2": "col5_d4b.jpg"
+      }
+    }
+  ]
