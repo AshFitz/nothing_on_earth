@@ -40,7 +40,11 @@ header {
 
 }
 
-.overlay {
+.product-header {
+    justify-content: space-between;
+}
+
+/* .overlay {
     height: 100%;
     width: 100%;
     top: 0;
@@ -48,4 +52,4 @@ header {
     position: fixed;
     background: white;
     z-index: -1;
-}
+} */
