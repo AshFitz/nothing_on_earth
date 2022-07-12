@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    width: fit-content;
+    width: 100%;
 }
 
 video {
@@ -44,6 +44,16 @@ header {
     justify-content: space-between;
 }
 
+.product-detail-img{
+    padding-top: 120px;
+}
+
+.product-detail-description{
+    position: relative;
+    bottom: 210px;
+    left: 0;
+}
+
 /* .overlay {
     height: 100%;
     width: 100%;
@@ -53,3 +63,14 @@ header {
     background: white;
     z-index: -1;
 } */
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .product-container {
+        padding-top: 155px;
+    }
+
+    body {
+        height: calc(100vh - 155px);
+    }
+}
