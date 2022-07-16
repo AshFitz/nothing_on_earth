@@ -84,7 +84,9 @@ a.category-badge > span.badge:hover {
     background: white;
     z-index: -1;
 } */
-
+.header-container {
+    padding-top: 100px;
+}
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .product-container {
