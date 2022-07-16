@@ -67,6 +67,13 @@ header {
     color: black;
 }
 
+.btn-border-black {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+
 
 /* 
 a.category-badge > span.badge:hover {
