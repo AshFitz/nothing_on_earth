@@ -54,6 +54,27 @@ header {
     left: 0;
 }
 
+.btt-button {
+    height: 45px;
+    width: 45px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+    color: black;
+}
+
+
+/* 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+} */
+
+
 /* .overlay {
     height: 100%;
     width: 100%;
