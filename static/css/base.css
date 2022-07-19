@@ -96,6 +96,14 @@ a.category-badge > span.badge:hover {
 .header-container {
     padding-top: 100px;
 }
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .product-container {
