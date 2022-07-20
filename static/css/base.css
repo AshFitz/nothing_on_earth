@@ -74,7 +74,10 @@ header {
     border: 2px solid black;
     color: black;
 }
-
+/* 
+.bag-pop-up-wrapper {
+    height: 100vh;
+} */
 
 
 /* 
@@ -97,11 +100,20 @@ a.category-badge > span.badge:hover {
     padding-top: 100px;
 }
 
+.toast { 
+    max-width: 500px;
+    height: 100vh;
+}
+
 .message-container {
+    max-width: 500px;
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 0px;
+    right: 0px;
     z-index: 99999999999;
+    background: white;
+    width: 35vw;
+    height: 100vh;
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
