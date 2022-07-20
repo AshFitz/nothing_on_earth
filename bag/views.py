@@ -32,14 +32,7 @@ def add_to_bag(request, item_id):
             bag[item_id] = {'items_by_size': {size: quantity}}
             messages.success(request, f'Added size {size.upper()} {product.name} to your bag')
     else:
-        #fix this code to not accept post if not sizes
-        if item_id in list(bag.keys()):
-            bag[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
-        else:
-            bag[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your bag')
-
+        messages.error(request, f'Cannot add {product.name} to your bag without a size') 
     request.session['bag'] = bag
     return redirect(redirect_url)
 
