@@ -105,16 +105,30 @@ a.category-badge > span.badge:hover {
     height: 100vh;
 }
 
-.message-container {
+.message-container .toast.show{
+    z-index: 999999999;
+}
+
+.message-container .toast {
     max-width: 500px;
     position: fixed;
     top: 0px;
     right: 0px;
-    z-index: 99999999999;
     background: white;
     width: 35vw;
     height: 100vh;
 }
+
+.message-container-info .toast.show{
+    position: fixed;
+    top: 5.125rem;
+    right: 0.9375rem;
+    z-index: 9999;
+    height: auto!important;
+    max-width: 350px;
+}
+
+
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
