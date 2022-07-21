@@ -128,7 +128,7 @@ a.category-badge > span.badge:hover {
     max-width: 350px;
 }
 
-
+/* .form-input-style */
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
