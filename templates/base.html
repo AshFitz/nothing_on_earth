@@ -72,7 +72,7 @@
               <span class="d-inline">({{ product_count }})</span>{% endif %}</a>
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a class="nav-link active" href="#">Management <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="{% url 'add_product' %}">Product Management <span class="sr-only">(current)</span></a>
               {% endif %}
               <a class="nav-link" href="{% url 'profile' %}">Profile</a>
               <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
