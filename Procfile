@@ -1,0 +1,1 @@
+web: gunicorn nothing_on_earth.wsgi:application
