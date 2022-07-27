@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-k2k-y=a%6mc=k*ctuhtu7_7(&ze%&2pkr+$tw5)7!13n289n)h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','8000-ashfitz-nothingonearth-vqmm1spyesz.ws-eu54.gitpod.io/']
+# Update allowed hosts
+ALLOWED_HOSTS = ['nothing-on-earth.herokuapp.com', 'localhost', '8000-ashfitz-nothingonearth-vqmm1spyesz.ws-eu54.gitpod.io/']
 
 
 # Application definition
@@ -120,8 +121,9 @@ WSGI_APPLICATION = 'nothing_on_earth.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if "DATABASE_URL" in os.environ:
-    DATABASES = {'default': dj_database_url.parse(
-        os.environ.get('DATABASE_URL'))}
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
 else:
     DATABASES = {
         'default': {
