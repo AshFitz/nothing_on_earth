@@ -4,7 +4,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000001",
-        "name": "Crop Meadow Floral Puff Dress",
+        "name": "Floral Puff Dress",
         "description": "Midi yellow floral dress with puff sleeves and open back",
         "details": "60% Nylon, 40% polyester",
         "price": 125,
@@ -20,7 +20,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000002",
-        "name": " Crop Meadow Sequined Mini Dress",
+        "name": "Sequined Mini Dress",
         "description": "Mini sequined lemon dress with baloon sleeves and check pattern",
         "details": "20% Nylon, 80% polyester",
         "price": 100,
@@ -36,7 +36,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000003",
-        "name": "Crop Meadow Textured Midi Dress",
+        "name": "Textured Midi Dress",
         "description": "Midi pink textured dress with cold shoulder baloon sleeves and pockets",
         "details": "100% polyester",
         "price": 110,
@@ -52,7 +52,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000004",
-        "name": "Crop Meadow Tiered Maxi Dress",
+        "name": "Tiered Maxi Dress",
         "description": "Oversized ivory tiered maxi dress with adjustable bow tie shoulder straps",
         "details": "100% polyester",
         "price": 140,
@@ -68,7 +68,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000005",
-        "name": "Bloom Spring Collard Maxi Dress",
+        "name": "Collard Maxi Dress",
         "description": "Ivory cotton maxi dress with oversized beaded collar and pockets",
         "details": "70% cotton, 30% Nylon",
         "price": 150,
@@ -84,7 +84,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000006",
-        "name": "Bloom Spring Jacquarad Midi Dress",
+        "name": "Jacquarad Midi Dress",
         "description": "Ivory jacquarad midi dress with lemon floral pattern and open back tie",
         "details": "100% polyester",
         "price": 170,
@@ -100,7 +100,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000007",
-        "name": "Bloom Spring Sweetheart Midi Dress",
+        "name": "Sweetheart Midi Dress",
         "description": "Pink jacquarad midi dress with sweatheart neckline and baloon sleeves",
         "details": "100% polyester",
         "price": 200,
@@ -116,7 +116,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000008",
-        "name": "Bloom Spring Gingham Maxi Dress",
+        "name": "Gingham Maxi Dress",
         "description": "Bright yellow gingham tiered maxi dress with black bow details",
         "details": "90% cotton, 10% nylon",
         "price": 200,
@@ -132,7 +132,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp000009",
-        "name": "Beach Gaze Jacquarad Midi Dress",
+        "name": "Jacquarad Midi Dress",
         "description": "Ivory heart jacquarad midi dress with puff sleeves and back bow tie",
         "details": "100% polyester",
         "price": 190,
@@ -148,7 +148,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000010",
-        "name": "Beach Gaze Briodery Midi Dress",
+        "name": "Briodery Midi Dress",
         "description": "Black briodery midi dress with oversized cut out collar",
         "details": "100% cotton",
         "price": 100,
@@ -164,7 +164,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000011",
-        "name": "Beach Gaze Smock Mini Dress",
+        "name": "Smock Mini Dress",
         "description": "Oversized pink spotted smock dress with drop shoulders",
         "details": "70% nylon, 30% polyester",
         "price": 85,
@@ -196,7 +196,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000013",
-        "name": "Eden Balcony Floral Maxi Dress",
+        "name": "Floral Maxi Dress",
         "description": "High neck ivory midi dress with bold coloured floral pattern and oversized sleeves",
         "details": "100% polyester",
         "price": 210,
@@ -212,7 +212,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000014",
-        "name": "Eden Balcony Monochrome Mini Dress",
+        "name": "Monochrome Mini Dress",
         "description": "Oversized smock mini dress with monochrome pattern and black bow straps",
         "details": "100% polyester",
         "price": 200,
@@ -228,7 +228,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000015",
-        "name": "Eden Balcony Textured Mini Dress",
+        "name": "Textured Mini Dress",
         "description": "Oversized ivory textured mini dress with ruffle details and pearl neckline",
         "details": "100% polyester",
         "price": 200,
@@ -244,7 +244,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000016",
-        "name": "Eden Balcony Textured Babydoll Dress",
+        "name": "Textured Babydoll Dress",
         "description": "Oversized pink textured babydoll dress with velvet bow straps",
         "details": "90% polyester, 10% nylon",
         "price": 165,
@@ -260,7 +260,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000017",
-        "name": "Shell Bay Jacquarad Maxi Dress",
+        "name": "Jacquarad Maxi Dress",
         "description": "Peach jacquarad maxi dress with sweatheart neckline and puff sleeves",
         "details": "100% polyester",
         "price": 225,
@@ -276,7 +276,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000018",
-        "name": "Shell Bay Vintage Maxi Dress",
+        "name": "Vintage Maxi Dress",
         "description": "Vintage ivory satin maxi dress with plunge neckline and oversized bow",
         "details": "100% viscose",
         "price": 220,
@@ -292,7 +292,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000019",
-        "name": "Shell Bay Ruffle Mini Dress",
+        "name": "Ruffle Mini Dress",
         "description": "Polka dot tiered ruffle mini dress with puff sleeves",
         "details": "100% polyester",
         "price": 240,
@@ -308,7 +308,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp0000020",
-        "name": "Shell Bay Jacquard Midi Dress",
+        "name": "Jacquard Midi Dress",
         "description": "Jacquarad midi dress with pockets and pink and yellow floral pattern",
         "details": "60% polyester, 40% nylon",
         "price": 210,
