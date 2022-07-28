@@ -29,13 +29,10 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-
         if 'collection' in request.GET:
             collections = request.GET['collection'].split(',')
             products = products.filter(collection__name__in=collections)
             collections = Collection.objects.filter(name__in=collections)
-        if not collections:
-            messages.error(request, "We don't have that collection!")
 
         if 'q' in request.GET:
             query = request.GET['q']
