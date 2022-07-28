@@ -5,6 +5,7 @@ html {
 
 body {
     width: 100%;
+    height: 100%;
 }
 
 video {
@@ -54,6 +55,9 @@ header {
     left: 0;
 }
 
+.fixed-top {
+    z-index: 99;
+}
 .btt-button {
     height: 45px;
     width: 45px;
@@ -212,6 +216,62 @@ a.collection-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* Nav styling*/
+
+.burger-icon {
+
+}
+
+.burger-icon:hover {
+    color: red;
+}
+
+.mobile-nav-side {
+    background: #fff;
+    position: fixed;
+    top:0;
+    left:-320px;
+    z-index: 9999;
+    width: 85%;
+    max-width: 20rem;
+    height: 100%;
+}
+
+.transition-right {
+    display: inline-block!important;
+    transition: 0.5s all ease-in-out;
+    transform: translateX(100%)!important;
+  }
+
+.mobile-nav-links {
+    list-style: none;
+    padding:0;
+}
+
+.mobile-nav-link-items {
+    border-bottom: 1px solid rgba(255, 255,255, 0.4);
+}
+
+.nav-background {
+    position:fixed;
+    display: none;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background: #000;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.overlay-nav {
+    opacity: 0.8;
+    visibility: visible;
+    z-index: 99;
+    transform: translateX(0%)!important;
+}
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .product-container {
@@ -220,5 +280,29 @@ a.collection-badge > span.badge:hover {
 
     body {
         height: calc(100vh - 155px);
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
