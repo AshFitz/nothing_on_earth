@@ -8,6 +8,14 @@ body {
     height: 100%;
 }
 
+a { 
+    color: #000;
+}
+
+a:hover {
+    color:red;
+}
+
 video {
   position: relative;
   height: 100%;
@@ -272,6 +280,15 @@ a.collection-badge > span.badge:hover {
     z-index: 99;
     transform: translateX(0%)!important;
 }
+
+.searcher {
+    top:60px;
+    left: -893px;
+    min-width: 100vw;
+}
+
+
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .product-container {
