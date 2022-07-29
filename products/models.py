@@ -19,6 +19,7 @@ class Product(models.Model):
     description = models.TextField()
     details = models.TextField(max_length=254, null=True, blank=True)
     has_sizes = models.BooleanField(default=True, null=True, blank=True)
+    sale = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image2_url = models.URLField(max_length=1024, null=True, blank=True)
