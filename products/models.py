@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Collection(models.Model):
-    name = models.CharField(max_length=254)
+    name = models.CharField(max_length=254,null=True, blank=True)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
