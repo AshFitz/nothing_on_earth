@@ -41,9 +41,28 @@
                             <div class="col-sm-6 col-lg-3 mb-5">
                                 <div class="h-100 border-0">
                                     {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                    </a>
+                                    <div id="carouselExampleControls_{{product.id}}" class="carousel slide" data-interval="false">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <a href="{% url 'product_detail' product.id %}">
+                                            <img class="card-img-top img-fluid d-blck w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                            </a>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <a href="{% url 'product_detail' product.id %}">
+                                            <img class="card-img-top img-fluid d-blck w-100" src="{{ product.image2.url }}" alt="{{ product.name }}">
+                                            </a>
+                                          </div>
+                                        </div>
+                                       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls_{{product.id}}" data-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls_{{product.id}}" data-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Next</span>
+                                        </button>
+                                      </div>
                                     {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}" alt="{{ product.name }}">
