@@ -12,7 +12,7 @@ from .forms import ProductForm
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    products = Product.objects.all().exclude(sale=True)
     query = None
     collections = None
     sort = None
@@ -39,10 +39,11 @@ def all_products(request):
 
         if 'sale' in request.GET:
             sale = request.GET['sale']
+            products = Product.objects.all()
             products = products.filter(sale__in=products)
             for product in products:
                 percentage = 50
-                discount =  product.price * Decimal(percentage / 100)
+                discount = product.price * Decimal(percentage / 100)
                 newprice = product.price - discount
 
         if 'q' in request.GET:
@@ -53,8 +54,6 @@ def all_products(request):
             
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(details__icontains=query) | Q(collection__friendly_name__icontains=query)
             products = products.filter(queries)
-
- 
 
     current_sorting = f'{sort}_{direction}'
 
