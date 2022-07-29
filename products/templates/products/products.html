@@ -49,9 +49,15 @@
                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}" alt="{{ product.name }}">
                                     </a>
                                     {% endif %}
+                                    {% if product.collection == Null %}
+                                    <div class="text-center font-weight-bold lead">
+                                        Mystery Sale Item
+                                    </div>
+                                    {% else %}
                                     <div class="text-center font-weight-bold lead">
                                     {{ product.collection.friendly_name }}
                                     </div>
+                                    {% endif %}
                                     <div class="card-body pb-0 pt-2 d-flex product-header">
                                         <p class="mb-0">{{ product.name }}</p>
                                         {% if product.sale and products.count < 3 %}
