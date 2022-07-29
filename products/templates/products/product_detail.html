@@ -24,7 +24,12 @@
             <div class="product-detail-description"> 
                 <p>{{ collection.friendly_name }}</p>
                 <p>{{ product.name }}</p>
+                {% if product.sale %}
+                <p class="text-danger" ><del>€{{ product.price }}</del></p>
+                <p >€{{ newprice }}</p>
+                {% else %}
                 <p>€{{ product.price }}</p>
+                {% endif%}
                 <p>{{ product.description }}</p>
                 <p>{{ product.details }}</p>
                 {% if request.user.is_superuser %}
