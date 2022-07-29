@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from decimal import Decimal
 
 from .models import Product, Collection
 from .forms import ProductForm
@@ -16,7 +17,9 @@ def all_products(request):
     collections = None
     sort = None
     direction = None
-
+    sale = None
+    newprice = None
+    
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -34,6 +37,14 @@ def all_products(request):
             products = products.filter(collection__name__in=collections)
             collections = Collection.objects.filter(name__in=collections)
 
+        if 'sale' in request.GET:
+            sale = request.GET['sale']
+            products = products.filter(sale__in=products)
+            for product in products:
+                percentage = 50
+                discount =  product.price * Decimal(percentage / 100)
+                newprice = product.price - discount
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -43,13 +54,17 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(details__icontains=query) | Q(collection__friendly_name__icontains=query)
             products = products.filter(queries)
 
+ 
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
         'collections': collections,
+        'sale': sale,
         'current_sorting': current_sorting,
+        'newprice': newprice,
     }
 
     return render(request, 'products/products.html', context)
@@ -59,9 +74,13 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    percentage = 50
+    discount =  product.price * Decimal(percentage / 100)
+    newprice = product.price - discount
 
     context = {
         'product': product,
+        'newprice': newprice
     }
 
     return render(request, 'products/product_detail.html', context)
