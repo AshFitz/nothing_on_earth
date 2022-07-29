@@ -54,7 +54,12 @@
                                     </div>
                                     <div class="card-body pb-0 pt-2 d-flex product-header">
                                         <p class="mb-0">{{ product.name }}</p>
+                                        {% if product.sale and products.count < 3 %}
+                                        <p class="mb-0 text-right"><del>€{{ product.price }}</del></p>
+                                        <p class="mb-0 text-right pl-2">€{{ newprice }}</p>
+                                        {% else %}
                                         <p class="mb-0 text-right">€{{ product.price }}</p>
+                                        {% endif%}
                                     </div>
                                 </div>
                             </div>
