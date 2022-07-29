@@ -52,21 +52,31 @@
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 {% endfor %}
                 <hr class="my-0">
                 <div class="row text-right">
                     <div class="col-7 offset-2">
-                        <p class="my-0">Order Total:</p>
+                        <p class="my-0">Total:</p>
                         <p class="my-0">Delivery:</p>
+                        {% for item in bag_items %}
+                        {% if item.product.sale %}
+                        <p class="my-0">Discounts:</p>
+                        {% endif %}
+                        {% endfor %}
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">€{{ checkout_total | floatformat:2 }}</p>
+                        <p class="my-0">€{{ delivery | floatformat:2 }}</p>
+                        {% for item in bag_items %}
+                        {% if item.product.sale %}
+                        <p class="my-0">-€{{ subtotal | floatformat:2 }}</p>
+                        {% endif %}
+                        {% endfor %}
+                        <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
