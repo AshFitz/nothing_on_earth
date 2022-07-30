@@ -117,6 +117,50 @@
             </div>
         </div>
     </div>
+    <!-- Product Review Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="product-reivew-header">Product reviews</div>
+                <div class="col-12">
+                    <h4>Reviews</h4>
+                    {% if reviews %}
+                    {% for review in reviews %} 
+                    <div class="review-container">
+                        {{review.user}}
+                        {{review.comment}}
+
+                        {% if review.user == request.user %}
+                        <a class="" href="{% url 'edit_review' product.id %}" aria-label="edit button">Edit</a>
+                        <a class="" href="{% url 'delete_review' product.id %}" aria-label="delete button">Delete</a>   
+                        {% endif %}
+                    {% endfor %}
+                    {% else %}
+                    <p>nobody has left a review yet</p>
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                {% if review_form %}
+                <form action="{% url 'add_review' product.id %}" method="POST" class="text-center">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+                        {% csrf_token %}
+                        {{ review_form }}
+                    </div>
+                    <div class="col-sm-12 col-12 text-center">
+                        <button class="mt-1" id="reviewbutton">Post review</button>
+                    </div>
+                </form>
+                {% elif review and not review_form %}
+                <p class="text-center">Thank you for reviewing this product.</p>
+                {% else %}
+                <p class="text-center">You can only review a product you have purchased.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
 
