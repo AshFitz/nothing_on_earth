@@ -16,6 +16,9 @@ a:hover {
     color:red;
 }
 
+.t-center {
+    text-align: -webkit-center;
+}
 video {
   position: relative;
   height: 100%;
@@ -194,6 +197,17 @@ a.collection-badge > span.badge:hover {
 
 .allauth-form-inner-content a {
 	color: #000; /* text-info */
+}
+
+/* Images */
+
+.card-img {
+
+
+}
+
+.product-main-container {
+    width: 280px;
 }
 
 /* Product Form */
