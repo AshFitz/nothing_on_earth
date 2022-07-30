@@ -1,3 +1,5 @@
+$('.toast').toast('show');
+
 const mobileBurger = $('#burger-menu-icon'); 
 const mobileNav = $('.mobile-nav-side');
 const navBackground = $('.nav-background');
