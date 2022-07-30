@@ -14,7 +14,7 @@ from .forms import ProductForm, ReviewForm
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all().exclude(sale=True)
+    products = Product.objects.filter().order_by('collection').exclude(sale=True)
     query = None
     collections = None
     sort = None
@@ -41,8 +41,7 @@ def all_products(request):
 
         if 'sale' in request.GET:
             sale = request.GET['sale']
-            products = Product.objects.all()
-            products = products.filter(sale=True)
+            products = Product.objects.all().filter(sale=True)
             for product in products:
                 percentage = 50
                 discount = product.price * Decimal(percentage / 100)
