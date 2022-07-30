@@ -1,0 +1,23 @@
+{% if messages %}
+    {% for message in messages %}
+        {% with message.level as level %}
+            {% if level == 40 %}
+            <div class="message-container-info">
+                {% include 'includes/toasts/toast_error.html' %}
+            </div>    
+            {% elif level == 30 %}
+            <div class="message-container-info">
+                {% include 'includes/toasts/toast_warning.html' %}
+            </div>
+            {% elif level == 25 %}
+            <div class="message-container">
+                {% include 'includes/toasts/toast_success.html' %}
+            </div>    
+            {% else %}
+            <div class="message-container-info">
+                {% include 'includes/toasts/toast_info.html' %}
+            </div>    
+            {% endif %}
+        {% endwith %}
+    {% endfor %}
+{% endif %}
