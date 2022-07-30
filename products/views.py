@@ -216,7 +216,7 @@ def add_review(request, product_id):
 def edit_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(Review, user=request.user, product=product_id)
-    
+
     if request.method == 'POST':
         review_form = ReviewForm(request.POST, instance=user)
         if review_form.is_valid():
@@ -231,7 +231,7 @@ def edit_review(request, product_id):
     template = 'products/product_review.html'
     context = {
         'product': product,
-        'review_form': review_form
+        'review_form': review_form,
     }
     return render(request, template, context)
 
