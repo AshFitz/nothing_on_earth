@@ -23,4 +23,57 @@
         </div>
     </div>
 </div>
+<!-- About section -->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+        <h2 class="text-center">This is about</h2>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>            
+        </div>
+    </div>
+</div>
+
+<!--Image show case-->
+<div class="container py-5 t-center">
+    <div class="row">
+    {% for product in products %}
+    {% if forloop.counter|divisibleby:6 %}
+        <div class="col-sm-6 col-lg-4 mb-5">
+            <div class="product-main-container h-100 border-0">
+                {% if product.image %}
+                <div id="carouselExampleControls_{{product.id}}" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <a href="{% url 'products' %}">
+                        <img class="card-img img-fluid d-blck w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        </div>
+                        <div class="carousel-item">
+                        <a href="{% url 'products' %}">
+                        <img class="card-img img-fluid d-blck w-100" src="{{ product.image2.url }}" alt="{{ product.name }}">
+                        </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls_{{product.id}}" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls_{{product.id}}" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                    </div>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+</div>
+
+
 {% endblock %}
