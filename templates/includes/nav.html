@@ -1,0 +1,52 @@
+{% load static %}
+<header class="container-fluid fixed-top bg-color">
+    <div class="row">
+        <div class="nav-background"></div>
+        <div class="col-12 col-sm-4 col-lg-4 my-auto py-2 text-center">
+        <!--Burger icon for mobile side bar-->
+        <div class="burger-icon d-sm-block d-md-block d-xl-none">
+            <i class="fas fa-bars" id="burger-menu-icon"></i>
+        </div>
+        <div class="nav-link">
+            {% include 'includes/products-nav.html' %}
+        </div>
+        </div>
+        {% include 'includes/mobile-nav.html' %}
+        <div class="col-12 col-sm-4 col-lg-4 my-auto py-2 text-center">
+        <a class="nav-link" href="{% url 'home' %}">
+        <p>Nothing On Earth</p>
+        </a>
+        </div>
+        <!--mobile search-->
+        <div class="col-12 col-sm-4 col-lg-4 d-sm-block d-md-block d-xl-none my-auto py-2 text-center">
+        <div class="">
+            {% include 'includes/search-item.html'%}
+        </div>
+        </div>
+
+    <div class="col-12 col-sm-4 col-lg-4 my-auto py-1 py-lg-0 d-none d-xl-block">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
+        <div>
+            <ul class="navbar-nav">
+            <!-- Standard search-->
+            {% include 'includes/search-item.html'%}
+            <li class="nav-item">
+                <a class="nav-link " href="{% url 'view_bag' %}">Bag
+            {% if product_count %}
+            <span class="">({{ product_count }})</span>{% endif %}</a>
+                </li>
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a class="nav-link" href="{% url 'add_product' %}">Admin<span class="sr-only">(current)</span></a>
+            {% endif %}
+            <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+            {% else %}
+            <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+            {% endif %}
+            </ul>
+        </div>
+        </nav>
+    </div>
+</header>   
