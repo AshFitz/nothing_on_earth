@@ -31,6 +31,7 @@ video {
 
 header {
     background-color: white;
+    border-bottom: 1px solid #eee;
 }
 .shop-now-container {
     position: absolute;
@@ -302,6 +303,11 @@ a.collection-badge > span.badge:hover {
 }
 
 
+/*Footer styling */
+footer {
+    border-top: 1px solid #eee;
+    height: 80px;
+}
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
