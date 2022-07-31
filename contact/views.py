@@ -20,15 +20,16 @@ def contact(request):
             subject = render_to_string('emails/contact_request_subject.txt')
             form.save()
             try:
-                send_email(
+                send_mail(
                     subject,
                     body,
-                    reply_email
+                    reply_email,
                     [admin_email],
                 )
                 messages.info(request, 'Your message has been sent succesfully')
             except Exception as e:
                 messages.error(request, f'Message not sent, Error {e}')
+                return redirect(reverse('contact'))
             return redirect(reverse('contact_success'))
         else:
             messages.error(request, 'Sorry something went wrong, please check all fields are filled out correctly')
