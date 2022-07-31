@@ -24,6 +24,7 @@ class ReviewAdmin(admin.ModelAdmin):
         'user',
         'product',
         'comment',
+        'timestamp',
     )
 
 
