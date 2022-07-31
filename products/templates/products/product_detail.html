@@ -118,41 +118,64 @@
         </div>
     </div>
     <!-- Product Review Section -->
-    <div class="container">
+    <div class="container text-center">
         <div class="row">
             <div class="col-12">
-                <div class="product-reivew-header">Product reviews</div>
-                <div class="col-12">
-                    <h4>Reviews</h4>
-                    {% if reviews %}
-                    {% for review in reviews %} 
-                    <div class="review-container">
-                        {{review.user}}
-                        {{review.comment}}
-
-                        {% if review.user == request.user %}
-                        <a class="" href="{% url 'edit_review' product.id %}" aria-label="edit button">Edit</a>
-                        <a class="" href="{% url 'delete_review' product.id %}" aria-label="delete button">Delete</a>   
-                        {% endif %}
-                    {% endfor %}
-                    {% else %}
+                <div class="product-reivew-header ">Product reviews</div>
+            </div>
+            <div class="col-12">
+                <h4>Reviews</h4>
+            </div>
+            <div class="col-12">
+                <div class="review-container">
+                    <div class="row">
+                        {% if reviews %}
+                        {% for review in reviews %} 
+                        <div class="col-sm-12 col-md-3 col-lg-3">
+                            <div class="review-box justify-content-center">
+                                <div class="card mt-2 mb-3">
+                                    <div class="card-up background-gradient"></div>
+                                    <div class="avatar mx-auto white">
+                                        <img src="{{ MEDIA_URL }}avatar.png" class="rounded-circle img-responsive" alt="avatar">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title font-weight-bold">{{review.user}}</h4>
+                                        <p class="card-title pr-1">{{review.timestamp|date:'d-m-Y' }}</p>
+                                        <hr>
+                                        <!-- Quotation -->
+                                        <p><i class="fas fa-quote-left"></i> {{review.comment}}</p>
+                                    </div>
+                                    <div class="card-admin">
+                                        {% if review.user == request.user %}
+                                        <a class="" href="{% url 'edit_review' product.id %}" aria-label="edit button">Edit</a>  | 
+                                        <a class="" href="{% url 'delete_review' product.id %}" aria-label="delete button">Delete</a>   
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                    </div>
                     <p>nobody has left a review yet</p>
                     {% endif %}
                 </div>
-                </div>
             </div>
+        </div>
 
             <div class="col-12">
                 {% if review_form %}
+                <div class="review-container">
                 <form action="{% url 'add_review' product.id %}" method="POST" class="text-center">
                     <div class="col-12 col-lg-8 offset-lg-2">
                         {% csrf_token %}
                         {{ review_form }}
                     </div>
                     <div class="col-sm-12 col-12 text-center">
-                        <button class="mt-1" id="reviewbutton">Post review</button>
+                        <button class="mt-1 custom-btn" id="reviewbutton">Post review</button>
                     </div>
                 </form>
+                </div>
                 {% elif review and not review_form %}
                 <p class="text-center">Thank you for reviewing this product.</p>
                 {% else %}
