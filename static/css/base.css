@@ -30,6 +30,9 @@ a:hover {
     color: #CB807D;
 }
 
+.text-black {
+    color:#000;
+}
 
 video {
   position: relative;
@@ -425,6 +428,14 @@ footer {
     top: 150px;
 }
 
+.landing-collage-text {
+    font-family: 'Caveat', cursive;
+    color: #CB807D;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
 .product-detail-collection-name {
     font-family: 'Caveat', cursive;
     color: #CB807D;
@@ -441,7 +452,7 @@ footer {
 }
 
 .input-group.quantity-chooser {
-    width: 45%;
+    width: 60%;
 }
 
 .btn-pink {
@@ -456,6 +467,19 @@ footer {
     border: 2px solid #CB807D;
     color: #000;
     border-radius: 2px;
+}
+
+.popup {
+    background:#fff;
+    display: none;
+    border: 2px solid #CB807D;
+    color:#CB807D;
+    position: fixed;
+    z-index: 99999;
+    top:30%;
+    left: 37%;
+    padding: 1.2rem;
+    transition: 0.5s all ease-in-out;
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
