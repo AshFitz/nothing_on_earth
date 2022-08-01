@@ -6,17 +6,18 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center mt-5">
                 <h2 class="mt-5">Dresses</h2>
+                <!-- Show collection name when chosing an individual collection -->
                 {% for collection in collections %}
                     <h4 class="">{{ collection.friendly_name }}</h4>
                 {% endfor %}
             </div>
         </div>    
-        <div class="row">
+       
+        <div class="col-12">
             <div class="product-container col-11 container-fluid">
                 <div class="row mt-2 mb-2">
                     <div class="col-12 col-md-6 my-auto d-flex justify-content-end">
@@ -33,17 +34,14 @@
                             {% if search_term or current_collections or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Shop All</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            {{ products|length }} {% if products.count < 2 %}Product {% else %} Products {% endif %}{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                     <div class="row">
                         {% comment %} {{ products.count }} {% endcomment %}
                         {% for product in products %}
-                        {% if product.sale == false %}
-                        
-                        {% else %}
-                        <div class="col-sm-6 col-lg-3 mb-5">
-                            <div class="product-main-container h-100 border-0">
+                        <div class="{% if product.sale %}col-12{% else %}col-sm-6 col-lg-3 mb-5{% endif %}">
+                            <div class="{% if product.sale  %}product-main-container{% else %} h-100 w-100 border-0{% endif %}">
                                 {% if product.image %}
                                 <div id="carouselExampleControls_{{product.id}}" class="carousel slide" data-interval="false">
                                     <div class="carousel-inner">
@@ -73,16 +71,18 @@
                                 </a>
                                 {% endif %}
                                 {% if product.collection == Null %}
-                                <div class="text-center font-weight-bold lead">
+                                <div class="text-center font-weight-bold lead product-detail-collection-name">
                                     Mystery Sale Item
                                 </div>
                                 {% else %}
-                                <div class="text-center font-weight-bold lead">
+                                <div class="text-center font-weight-bold lead product-detail-collection-name">
                                 {{ product.collection.friendly_name }}
                                 </div>
                                 {% endif %}
                                 <div class="card-body pb-0 pt-2 d-flex product-header">
+                                    <a href="{% url 'product_detail' product.id %}">
                                     <p class="mb-0">{{ product.name }}</p>
+                                    </a>
                                     {% if product.sale and products.count < 3 %}
                                     <p class="mb-0 text-right"><del>€{{ product.price }}</del></p>
                                     <p class="mb-0 text-right pl-2">€{{ newprice }}</p>
@@ -92,7 +92,6 @@
                                 </div>
                             </div>
                         </div>
-                        {% endif %}
                         {% endfor %}
                     </div>
                 </div>
