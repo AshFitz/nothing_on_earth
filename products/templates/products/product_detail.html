@@ -47,7 +47,13 @@
                     <small class="ml-3">
                         <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                         <!-- Remove the initial delete and popup-->
-                        <a class="text-main-color" href="#">Delete</a>
+                        <a class="text-main-color" id="delete-button" href="#">Delete</a>
+                        <div class="popup rounded text-center" id="delete-popup">
+                            <h3>Are you sure you wish to delete</h3>
+                            <h4 class="card-sub-title text-black">This action cannot be reverted</h4>
+                            <a class="btn btn-border-pink mr-5" aria-label="products link" id="close-product-button">Close</a>
+                            <a class="text-white btn btn-pink" aria-label="delete product button" id="delete-product-button" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </div>
                     </small>
                     {% endif %}
                     <hr>
