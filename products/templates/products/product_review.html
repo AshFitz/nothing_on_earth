@@ -6,15 +6,21 @@
 
 <div class="container pt-5">
     <div class="row">
+        <div class="col-12"></div>
+    </div>
+</div>
+
+<div class="container pt-5">
+    <div class="row">
         <div class="col-12 pt-5">
-            <h4 class="text-center">Update your review.</h4>
+            <h4 class="text-center">Update your review</h4>
             <form class="text-center" action="{% url 'edit_review' product.id %}" method="POST">
                 <div class="col-12">
                     {% csrf_token %}             
                     {{ review_form }}
                 </div>
-                <div class="col-12 text-center">
-                    <button class="btn btn-danger">Update your review</button>
+                <div class="col-12 text-center pb-5">
+                    <button class="btn custom-btn pb-4">Update your review</button>
                 </div>
             </form>
         </div>
