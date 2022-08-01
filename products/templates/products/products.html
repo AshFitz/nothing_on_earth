@@ -15,7 +15,9 @@
                     <h4 class="">{{ collection.friendly_name }}</h4>
                 {% endfor %}
             </div>
-            <div class="product-container col-10 offset-1">
+        </div>    
+        <div class="row">
+            <div class="product-container col-11 container-fluid">
                 <div class="row mt-2 mb-2">
                     <div class="col-12 col-md-6 my-auto d-flex justify-content-end">
                         <div class="sort-select-wrapper w-50">
@@ -38,7 +40,7 @@
                         {% comment %} {{ products.count }} {% endcomment %}
                         {% for product in products %}
                         {% if product.sale == false %}
-                        im thisss
+                        
                         {% else %}
                         <div class="col-sm-6 col-lg-3 mb-5">
                             <div class="product-main-container h-100 border-0">
@@ -96,7 +98,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up mx-auto my-auto"></i>
