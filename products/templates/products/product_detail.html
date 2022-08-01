@@ -13,14 +13,10 @@
                 <div id="carouselExampleControls_{{product.id}}" class="carousel slide" data-interval="false">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid d-blck w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
                       </div>
                       <div class="carousel-item">
-                        <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid d-blck w-100" src="{{ product.image2.url }}" alt="{{ product.name }}">
-                        </a>
                       </div>
                     </div>
                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls_{{product.id}}" data-slide="prev">
@@ -43,7 +39,7 @@
             <div class="product-detail-description"> 
                 <p>{{ collection.friendly_name }}</p>
                 <p>{{ product.name }}</p>
-                {% if product.sale %}
+                {% if product.sale == True %}
                 <p class="text-danger" ><del>€{{ product.price }}</del></p>
                 <p >€{{ newprice }}</p>
                 {% else %}
@@ -54,7 +50,8 @@
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    <!-- Remove the initial delete and popup-->
+                    <a class="text-danger" href="#">Delete</a>
                 </small>
                 {% endif %}
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
@@ -161,22 +158,24 @@
                 </div>
             </div>
         </div>
-
+        
             <div class="col-12">
+                <hr>
                 {% if review_form %}
                 <div class="review-container">
+                    <div class="product-reivew-header py-5">Add your review</div>
                 <form action="{% url 'add_review' product.id %}" method="POST" class="text-center">
                     <div class="col-12 col-lg-8 offset-lg-2">
                         {% csrf_token %}
                         {{ review_form }}
                     </div>
-                    <div class="col-sm-12 col-12 text-center">
+                    <div class="col-sm-12 col-12 text-center my-3">
                         <button class="mt-1 custom-btn" id="reviewbutton">Post review</button>
                     </div>
                 </form>
                 </div>
                 {% elif review and not review_form %}
-                <p class="text-center">Thank you for reviewing this product.</p>
+                <p class="text-center py-5">Thank you for reviewing this product.</p>
                 {% else %}
                 <p class="text-center">You can only review a product you have purchased.</p>
                 {% endif %}
