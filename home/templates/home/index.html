@@ -14,7 +14,7 @@
                     <div class="col-12 my-auto text-center">
                         <div class="my-4">
                             <h1>
-                                <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-lg py-2">Shop Now</a>
+                                <a href="{% url 'products' %}" class="font-weight-bold product-detail-collection-name btn btn-lg rounded-lg py-2">Shop Now</a>
                             </h1>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<!--Image show case-->
+<!--Product image showcase-->
 <div class="container py-5 t-center">
     <div class="row">
     {% for product in products %}
@@ -73,5 +73,25 @@
     </div>
 </div>
 
+<!-- Image showcase -->
+<div class="container mb-5 collage-container">
+    <div class="row">
+        <div class="col-12 text-center pb-5">
+            <h4 class="landing-collage-text">For Every Occasion</h4>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <img src="{{ MEDIA_URL }}image4.webp" class="img-fluid mb-3" alt="dress image 4">
+          <img src="{{ MEDIA_URL }}image3.webp" class="img-fluid mb-3" alt="dress image 3">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img src="{{ MEDIA_URL }}image1.webp" class="img-fluid mb-3" alt="dress image 1">
+          <img src="{{ MEDIA_URL }}image2.webp" class="img-fluid mb-3" alt="dress image 2">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">  
+          <img src="{{ MEDIA_URL }}image8.webp" class="img-fluid mb-3" alt="dress image 8">
+          <img src="{{ MEDIA_URL }}image6.webp" class="img-fluid mb-3" alt="dress image 6">
+        </div>
+    </div>
+</div>
 
 {% endblock %}
