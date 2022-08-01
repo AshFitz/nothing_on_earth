@@ -25,6 +25,12 @@ a:hover {
 .t-center {
     text-align: -webkit-center;
 }
+
+.text-main-color {
+    color: #CB807D;
+}
+
+
 video {
   position: relative;
   height: 100%;
@@ -40,6 +46,7 @@ header {
     border-bottom: 1px solid #eee;
     font-family: 'Caveat', cursive;
 }
+
 .shop-now-container {
     position: absolute;
     top: 75vh;
@@ -64,15 +71,7 @@ header {
     justify-content: space-between;
 }
 
-.product-detail-img{
-    padding-top: 120px;
-}
 
-.product-detail-description{
-    position: relative;
-    bottom: 210px;
-    left: 0;
-}
 
 .fixed-top {
     z-index: 99;
@@ -215,7 +214,7 @@ a.collection-badge > span.badge:hover {
 }
 
 .product-main-container {
-    width: 280px;
+    
 }
 
 /* Product Form */
@@ -334,37 +333,13 @@ footer {
     height: min-content;
     border: 1pxsolidrgba(0,0,0,0.125);
     border-radius: 0.25rem;
-    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.card-up {
-    height: 75px;
-    overflow: hidden;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-}
 
 .card-admin {
     flex-direction: column;
 }
 
-.background-gradient {
-
-    background-color: #e899dc;
-    background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
-}
-
-.avatar {
-    width: 120px;
-    margin-top: -60px;
-    overflow: hidden;
-    border: 5px solid #fff;
-    border-radius: 50%;
-}
-
-.avatar img {
-    width: 100%;
-}
 
 .card-body {
     padding-top: 1.5rem;
@@ -378,6 +353,14 @@ footer {
 .card-title{
     margin-bottom: 0.75rem;
     font-size: 1rem;
+}
+
+.quote {
+    font-size: 0.7rem;
+}
+.card-sub-title {
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
 }
 
 
@@ -426,6 +409,49 @@ footer {
     border-radius: 0.25rem;
 }
 
+/* Product detail styling */
+
+.product-detail-img{
+    padding-top: 120px;
+}
+
+.product-detail-description {
+    position: relative;
+    top: 150px;
+}
+
+.product-detail-collection-name {
+    font-family: 'Caveat', cursive;
+    color: #CB807D;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.product-detail-name {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.input-group.quantity-chooser {
+    width: 45%;
+}
+
+.btn-pink {
+    background: #CB807D;
+    border: 2px solid #CB807D;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.btn-border-pink {
+    background: #fff;
+    border: 2px solid #CB807D;
+    color: #000;
+    border-radius: 2px;
+}
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
