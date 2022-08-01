@@ -214,6 +214,8 @@ a.collection-badge > span.badge:hover {
 }
 
 .product-main-container {
+    position: relative;
+    width: 350px;
     
 }
 
@@ -314,6 +316,9 @@ a.collection-badge > span.badge:hover {
 footer {
     border-top: 1px solid #eee;
     height: 80px;
+    position: static;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -393,7 +398,7 @@ footer {
 .custom-btn {
     width: auto;
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     padding-right: 40px;
     padding-left: 40px;
     text-align: center;
