@@ -7,7 +7,7 @@
 
 {% block content %}
     <div class="container-fluid ">
-        <div class="row py-5">
+        <div class="row detail-spacing">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 text-center offset-lg-2">
                 <div class="product-detail-img">
                     {% if product.image %}
@@ -76,7 +76,7 @@
                             {% with product.has_sizes as s %}
                             {% if s %}
                                 <div class="col-12">
-                                    <select class="form-control rounded-0 w-25" name="product_size" id="id_product_size">
+                                    <select class="form-control rounded-0 select-size" name="product_size" id="id_product_size">
                                         <option selected="true" disabled="disabled">Size</option>
                                         <option value="xs">xs</option>
                                         <option value="s">s</option>
@@ -114,8 +114,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-2">
-                                <a href="{% url 'products' %}" class="btn btn-border-pink">
+                            <div class="col-12 mt-2 ">
+                                <a href="{% url 'products' %}" class="btn btn-border-pink mb-2">
                                     <span>Continue Shopping</span>
                                 </a>
                                 <input type="submit" class="btn btn-pink" value="Add to Bag">
