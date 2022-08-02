@@ -125,6 +125,12 @@ a.collection-badge > span.badge:hover {
     padding-top: 100px;
 }
 
+.allauth-styling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .toast { 
     max-width: 500px;
     height: 100vh;
@@ -132,16 +138,6 @@ a.collection-badge > span.badge:hover {
 
 .message-container .toast.show{
     z-index: 999999999;
-}
-
-.message-container .toast {
-    max-width: 500px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    background: white;
-    width: 35vw;
-    height: 100vh;
 }
 
 .message-container-info .toast.show{
@@ -456,10 +452,10 @@ footer {
 }
 
 .btn-pink {
-    background: #CB807D;
-    border: 2px solid #CB807D;
-    color: #fff;
-    border-radius: 2px;
+    background: #CB807D!important;
+    border: 2px solid #CB807D!important;
+    color: #fff!important;
+    border-radius: 2px!important;
 }
 
 .btn-border-pink {
