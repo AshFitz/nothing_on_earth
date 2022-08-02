@@ -4,25 +4,24 @@
     <ul class="mobile-nav-links">
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?sale=sale" class="dropdown-item">Sale</a></li>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}" class="dropdown-item">Shop All</a></li>
-      <h2>Shop Collections</h2>
+      <h4 class="text-main-color">Shop Collections</h4>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=crop_meadow" class="dropdown-item">Crop Meadow</a></li>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=bloom_spring" class="dropdown-item">Bloom Spring</a></li>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=beach_gaze" class="dropdown-item">Beach Gaze</a></li>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=eden_balcony" class="dropdown-item">Eden Balcony</a></li>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=shell_bay" class="dropdown-item">Shell Bay</a></li>
-      <h2>Account</h2>
-      <li class="mobile-nav-link-items">
+      <h4 class="text-main-color">Account</h4>
       {% if request.user.is_authenticated %}
       {% if request.user.is_superuser %}
-      <a class="dropdown-item" href="{% url 'add_product' %}">Product Management <span class="sr-only">(current)</span></a>
+      <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'add_product' %}">Product Management <span class="sr-only">(current)</span></a></li>
       {% endif %}
-      <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
-      <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+      <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+      <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
       {% else %}
-      <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
-      <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
+      <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+      <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
       {% endif %}
-      <a class="nav-link href="{% url 'contact' %}">Contact</a>
+      <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'contact' %}">Contact</a></li>
     </ul>
   </nav>
 </div>
