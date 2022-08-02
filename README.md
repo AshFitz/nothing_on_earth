@@ -254,3 +254,10 @@ Image 2 URL    | image2_url     | URLField        | max_length=1024, null=True, 
 Image          | image          | ImageField      | null=True, blank=True
 Image2         | image2         | ImageField      | null=True, blank=True
 
+##### Review Model
+      Name     |    Key in db   |   Field Type    |   Arguments
+     :-----:   |     :-----:    |     :-----:     |    :-----:
+Product        | product        | ForeignKey      | Product, on_delete=models.CASCADE, null=True, blank=True,related_name='reviews'
+User           | user           | ForeignKey      | User, on_delete=models.CASCADE, null=True, blank=True, related_name='user_review'
+Comment        | comment        | TextField       | max_length=1000, blank=True, null=True
+Timestamp      | timestamp      | DateTimeField   | auto_now_add=True
