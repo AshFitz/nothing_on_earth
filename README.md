@@ -138,3 +138,9 @@
 ### Images
 <p> I selected images and a video that is in contrast with the theme of femininity and elegance. They help the user undersand the sites purpose and the we have to sell, they also help the user determine if this type of site and products will suit their needs. These images and videos were used throughout the site, the homepage, the product page, the product details page and the bag etc. The images were sourced from  <a href="https://sisterjane.com/">Sister Jane.
 </p>
+
+## Wireframes:
+<p> The wireframes were created in <a href="https://balsamiq.com/" target="_blank">balsamiq</a>. This helped me to plan the visual look of the website. I created wireframes for mobile, tablet and desktop.
+</p>
+
+<p> The wireframes for the project can be found <a href="https://github.com/AshFitz/nothing_on_earth/tree/main/wireframes" target="_blank">here.</a></p>
