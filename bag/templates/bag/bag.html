@@ -60,7 +60,7 @@
                                 <td class="py-3 w-25">
                                     <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                         {% csrf_token %}
-                                        <div class="form-group">
+                                        <div class="form-group bag-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <button class="decrement-qty btn btn-sm btn-border-black rounded-0" 
@@ -105,7 +105,7 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'products' %}" class="btn btn-border-pink rounded-0 btn-lg">
+                                <a href="{% url 'products' %}" class="btn btn-border-pink rounded-0 btn-lg btn-btn-mobile">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
@@ -122,7 +122,7 @@
                     </table>
                 </div>
                 {% else %}
-                <p class="mb-4 text-center">Your bag is empty</p>
+                <p class="mb-4 text-center mb-5">Your bag is empty</p>
                 <a href="{% url 'products' %}" class="btn btn-pink rounded-none btn-lg">
                     <span>
                         <i class="fas fa-chevron-left"></i>
