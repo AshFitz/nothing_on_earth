@@ -114,3 +114,9 @@
 ## Design Choices:
 <p> The design of the site needs to draw the user in with hopes they stay and purchase the items we sell. The colours need to be appealing and compliment the the content and the product images. The site will have a feminine and elegant theme to help portray the produts we sell. The design will ensure the site is easily navigated which will result in users returning and signing up. 
 </p>
+
+### Fonts:
+* [Caveat](https://fonts.google.com/specimen/Caveat?category=Display,Handwriting&preview.text=Hellop&preview.text_type=custom)
+* [Comfortaa](https://fonts.google.com/specimen/Comfortaa?subset=chinese-traditional)
+<p>I chose these font families for the website as they compliment the colour scheme, theme and the content well. They are easily readable and add to the clean and elegant style.
+</p>
