@@ -50,3 +50,21 @@
     * I want to offer users the option to click into each individual product so they have more information on the product.
     * I want to provide the user with the different individual collections so the use can find the products they like with ease.
     * I want to display the sale so the user can purchase an item at a reduces rate and save money.
+
+## EPIC|Registration and User Accounts
+
+* As a Site User:
+    * I can register for an account so that I can add my personal information and view my order history.
+    * I can login and logout of my account so that I can access my personal information.
+    * I can receive an email registration confirmation email so that I can verify my account registration was successful.
+    * I can have a personal profile so that I can view my order history, order confirmation and save my preferred address.
+    * I can recover my password if I forget it so that I can recover access to my account.
+    * I can get in contact with the site owner via the contact form to ask any question I have.
+
+* As a Site Owner:
+    * I want the user to have an option to create an account so they can add their personal information and view their order history.
+    * I want the user to be able to login and logout, to give them access to their personal information.
+    * I want the user to receive an email registration confirmation email so that they can verify their account registration was successful.
+    * I want the user to have a personal profile so that they can view their order history, order confirmation and save their preferred address.
+    * I want the user to be able to recover their password if they forget it so that they can recover access to their account.
+    * I want the user to be able to contact me via the contact form to ask any question they have.
