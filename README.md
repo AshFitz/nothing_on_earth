@@ -29,3 +29,24 @@
 * A site that creates frequent and loyal users.
 * A site that allows users to leave reviews on a item they ourchased which other sers can read.
 * A site that encourages user sales with high standard of quality dresses and reasonable prices.
+
+## User Stories
+
+### EPIC|Viewing and Navigation
+
+* As a Site User:
+    * I can view the homepage so that I can understand the sites purpose to determine if it suits my needs.
+    * I can use the nav and footer elements so that I can navigate to different areas of the website and external links.
+    * I can view the products page so that I can decide what I would like to purchase.
+    * I can click into each individual product so that I can get more information on the product.
+    * I can view the different collections so that I can view the products I am interested in buying without searching through all the products.
+    * I can view the item that is on sale so that I can purchase an item at a reduced rate.
+    
+
+* As a Site Owner:
+    * I want the user to view the landing page so they can immediately understand the sites use and purpose.
+    * I want to provide easy navigation to different areas of the site to enhance the user experience.
+    * I want to provide the user with a products page so the user can view all the items they can puchase.
+    * I want to offer users the option to click into each individual product so they have more information on the product.
+    * I want to provide the user with the different individual collections so the use can find the products they like with ease.
+    * I want to display the sale so the user can purchase an item at a reduces rate and save money.
