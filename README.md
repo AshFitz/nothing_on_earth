@@ -221,3 +221,14 @@ Product Size   | product_size   | CharField       | max_length=2, null=True, bla
 Quantity       | quantity       | IntegerField    | null=False, blank=False, default=0
 Line Item Total| lineitem_total | DecimalField    | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
+#### The Contact App:
+##### Contact Form Model
+      Name     |    Key in db   |   Field Type    |   Arguments
+     :-----:   |     :-----:    |     :-----:     |    :-----:
+First Name     | first_name     | CharField       | max_length=80, blank=False, null=False
+Last Name      | last_name      | CharField       | max_length=80, blank=False, null=False
+Email          | email          | EmailField      | max_length=254, null=False, blank=False
+Phone          | phone          | CharField       | max_length=20, null=False, blank=False, default=''
+Message        | message        | TextField       | null=False, blank=False
+
+
