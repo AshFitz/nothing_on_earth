@@ -109,3 +109,8 @@
     * I can add a product so that I can add new items to my store.
     * I can update a product so that I can edit the product details.
     * I can delete a product so that I can remove any items that are no longer required.
+
+
+## Design Choices:
+<p> The design of the site needs to draw the user in with hopes they stay and purchase the items we sell. The colours need to be appealing and compliment the the content and the product images. The site will have a feminine and elegant theme to help portray the produts we sell. The design will ensure the site is easily navigated which will result in users returning and signing up. 
+</p>
