@@ -261,3 +261,16 @@ Product        | product        | ForeignKey      | Product, on_delete=models.CA
 User           | user           | ForeignKey      | User, on_delete=models.CASCADE, null=True, blank=True, related_name='user_review'
 Comment        | comment        | TextField       | max_length=1000, blank=True, null=True
 Timestamp      | timestamp      | DateTimeField   | auto_now_add=True
+
+#### The Profiles App:
+##### User Profile Model
+           Name        |        Key in db       |   Field Type    |   Arguments
+          :-----:      |         :-----:        |     :-----:     |    :-----:
+User                   | user                   | OneToOneField   | User, on_delete=models.CASCADE
+Default Phone Number   | default_phone_number   | CharField       | max_length=20, null=True, blank=True
+Default Street Address1| default_street_address1| CharField       | max_length=80, null=True, blank=True
+Default Street Address2| default_street_address2| CharField       | max_length=80, null=True, blank=True
+Default Town Or City   | default_town_or_city   | CharField       | max_length=40, null=True, blank=True
+Default County         | default_county         | CharField       | max_length=80, null=True, blank=True
+Default Postcode       | default_postcode       | CharField       | max_length=20, null=True, blank=True
+Default Country        | default_country        | CountryField    | blank_label='Country', null=True, blank=True
