@@ -238,3 +238,19 @@ Message        | message        | TextField       | null=False, blank=False
 Name           | name           | CharField       | max_length=254,null=True, blank=True
 Friendly Name  | friendly_name  | CharField       | max_length=254, null=True, blank=True
 
+##### Product Model
+      Name     |    Key in db   |   Field Type    |   Arguments
+     :-----:   |     :-----:    |     :-----:     |    :-----:
+Collection     | collection     | ForeignKey      | 'Collection', null=True, blank=True, on_delete=models.SET_NULL
+SKU            | sku            | CharField       | max_length=254, null=True, blank=True
+Name           | name           | CharField       | max_length=254
+Description    | description    | TextField       |
+Details        | details        | TextField       | max_length=254, null=True, blank=True
+Has Sizes      | has_sizes      | BooleanField    | default=True, null=True, blank=True
+Sale           | sale           | BooleanField    | default=False, null=True, blank=True
+Price          | price          | DecimalField    | max_digits=6, decimal_places=2
+Image URL      | image_url      | URLField        | max_length=1024, null=True, blank=True
+Image 2 URL    | image2_url     | URLField        | max_length=1024, null=True, blank=True
+Image          | image          | ImageField      | null=True, blank=True
+Image2         | image2         | ImageField      | null=True, blank=True
+
