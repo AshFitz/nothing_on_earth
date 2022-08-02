@@ -218,6 +218,13 @@ header {
 
 }
 
+.mobile-nav-container {
+    display: flex;
+    flex-direction: row;
+    place-content: space-around;
+    padding-top: 20px;
+}
+
 .burger-icon:hover {
     color: #dc3545;
 }
