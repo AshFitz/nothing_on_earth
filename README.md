@@ -231,4 +231,10 @@ Email          | email          | EmailField      | max_length=254, null=False, 
 Phone          | phone          | CharField       | max_length=20, null=False, blank=False, default=''
 Message        | message        | TextField       | null=False, blank=False
 
+#### The Products App:
+##### Collection Model
+      Name     |    Key in db   |   Field Type    |   Arguments
+     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name           | name           | CharField       | max_length=254,null=True, blank=True
+Friendly Name  | friendly_name  | CharField       | max_length=254, null=True, blank=True
 
