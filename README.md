@@ -88,3 +88,17 @@
     * I want the user to be able to view their order confirmation so that they can review their purchase.
     * I want the user to receive an email confirming their purchase so that they have a record of their purchase.
     * I want the user to be able to add, edit and delete a review on an item they have recently purchased so that they can share their thoughts and feedback on the purchase.
+
+### EPIC|Sorting and Searching
+
+* As a Shopper:
+    * I can sort the list of available products so that the items match my preference.
+    * I can sort a specific collection of products so that the items match my preference.
+    * I can search for a product by name or description so that I can refine my search.
+    * I can view my search results and the number of results so that I can view the refined products.
+
+* As a Site Owner:
+    * I want the user to be able to sort the list of available products so that the items match their preference.
+    * I want the user to be able to sort a specific collection of products so that the items match their preference
+    * I want the user to be able to search for a product by name or description so that they can refine their search.
+    * I want the user to view their searched results and the number of results so that they can view the refined products.
