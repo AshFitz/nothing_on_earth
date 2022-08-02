@@ -68,3 +68,23 @@
     * I want the user to have a personal profile so that they can view their order history, order confirmation and save their preferred address.
     * I want the user to be able to recover their password if they forget it so that they can recover access to their account.
     * I want the user to be able to contact me via the contact form to ask any question they have.
+
+### EPIC|Purchase and Checkout
+
+* As a Shopper:
+    * I can select the size and quantity of a product so that I can select the desired item.
+    * I can view the current items in my bag so that I can see what I am about to purchase and the total cost.
+    * I can adjust the quantity of the items in my bag so that I can make changes to my purchase before checkout.
+    * I can enter my payment information so that I can checkout and purchase the items in my bag.
+    * I can view my order confirmation so that I can review my purchase.
+    * I can receive an email confirming my purchase so that I have a record of my purchase.
+    * I can add, edit and delte a review on an item I have recently purchased so that I can share my thoughts and feedback on my purchase.
+
+* As a Site Owner:
+    * I want the user to be able to select the size and quantity of a product so that I can select the desired item.
+    * I want the user to be able to view the current items in their bag so that they can see what they are about to purchase and the total cost.
+    * I want the user to be able to adjust the quantity of the items in their bag so that they can make changes to their purchase before checkout.
+    * I want the user to be able to enter their payment information so that they can checkout securly and purchase the items in their bag.
+    * I want the user to be able to view their order confirmation so that they can review their purchase.
+    * I want the user to receive an email confirming their purchase so that they have a record of their purchase.
+    * I want the user to be able to add, edit and delete a review on an item they have recently purchased so that they can share their thoughts and feedback on the purchase.
