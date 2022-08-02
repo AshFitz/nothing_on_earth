@@ -1,15 +1,27 @@
 {% load static %}
 <footer>
-    <div class="container-fluid t-center">
+    <div class="container-fluid t-center pt-5">
         <div class="row">
-            <div class="col-4">
-                Social links
+            <div class="col-sm-12 col-md-4 pb-3">
+                <ul class="footer-nav-ul">
+                    <li class="nav-link text-decoration-none"><a aria-label="home" target="_blank" href="https://www.facebook.com/">Facebook</a></li>
+                    <li class="nav-link text-decoration-none"><a aria-label="shop" target="_blank" href="https://www.instagram.com/">Instagram</a></li>     
+                </ul>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12 footer-nav-ul col-md-4 pb-3 text-center">
                 Nothing on earth
             </div>
-            <div class="col-4">
-                Links to login / logout bag etc
+            <div class="col-sm-12  col-md-4 pb-3">
+                <ul class="footer-nav-ul">
+                    {% if user.is_authenticated %}
+                    <li class="nav-link text-decoration-none"><a aria-label="home" href="{% url 'profile' %}">My Profile</a></li>
+                    <li class="nav-link text-decoration-none"><a aria-label="shop" href="{% url 'view_bag' %}">My Bag</a></li>
+                    <li class="nav-link text-decoration-none"><a aria-label="about-us" href="{% url 'account_logout' %}">Logout</a></li>
+                    {% else %}
+                    <li class="nav-link text-decoration-none"><a aria-label="home" href="{% url 'account_signup' %}">Register</a></li>
+                    <li class="nav-link text-decoration-none"><a aria-label="shop" href="{% url 'account_login' %}">Sign In</a></li>
+                    {% endif %}          
+                </ul>
             </div>
         </div>
     </div>
