@@ -20,3 +20,12 @@
 * A site that allows you to sign up or login. 
 * A site that allows you to leave a review on a item you purchased.
 * A site that allows you to see your previous orders.
+
+### Site Owner Goals:
+* A site that is user friendly and easy to navigate.
+* A site that easily provides a user with our purpose and objective.
+* A site that encourages users to sign up and create an account.
+* A site that provides users with a safe and secure e-commerce platform in order to generate revenue from sales.
+* A site that creates frequent and loyal users.
+* A site that allows users to leave reviews on a item they ourchased which other sers can read.
+* A site that encourages user sales with high standard of quality dresses and reasonable prices.
