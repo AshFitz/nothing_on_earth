@@ -274,3 +274,20 @@ Default Town Or City   | default_town_or_city   | CharField       | max_length=4
 Default County         | default_county         | CharField       | max_length=80, null=True, blank=True
 Default Postcode       | default_postcode       | CharField       | max_length=20, null=True, blank=True
 Default Country        | default_country        | CountryField    | blank_label='Country', null=True, blank=True
+
+## Features:
+
+### Featured that have been developed:
+
+* <p>Account registration, a user can login and access their profile and previous orders.</p>
+* <p>A user can update their saved information through their profile.</p>
+* <p>A list of products a user can view. They can also select each product to find out more information on the product.</p>
+* <p>A shopping bag that users can add items to. They also have the ability to edit and remove items.</p>
+* <p>A user can complete a purchase and checkout with the items in their bag using the Stripe API which processes the payment securley. The user will also be able to view their order confirmation.</p>
+* <p>A user can get in contact with us via email by filling out the contact form.</p>
+* <p>A user who has purchased an item will have the ability to leave a review on the item.</p>
+
+### Featured that have been developed:
+* <p> A user will have he ability to sign up to a newsletter subscription. </p>
+* <p> A star rating within the review functionality.</p>
+* <p> A user will have the ability to save items that they like, to come back to them at a later stage without having to look through all the products agian.</p> 
