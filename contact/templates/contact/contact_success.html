@@ -2,5 +2,19 @@
 {% load static %}
 
 {% block content %}
- thanks
+<div class="container contact-container pb-5">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="text-center pb-5">Thank you!</h3>
+        </div>
+        <div class="col-12 text-center">
+            <h3 class="text-center pb-5 text-main-color">We have received your email!
+            </h3>
+            <h3 class="text-center pb-5">A member of our team will review your message ASAP!
+            </h3>
+            <a href="{% url 'home' %}">
+            <button class="btn btn-pink">Home</button></a>
+        </div>
+    </div>
+</div>
 {% endblock  %}
