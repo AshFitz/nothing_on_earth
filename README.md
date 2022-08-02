@@ -312,3 +312,14 @@ Default Country        | default_country        | CountryField    | blank_label=
 #### Databases:
 * <a href="https://www.postgresql.org/" target="_blank">PostgreSQL - Production</a>
 * <a href="https://www.sqlite.org/index.html" target="_blank">SQlite3 - Development</a>
+
+## Planning and Testing:
+
+#### Planning:
+
+<p> Creating the wireframes really helped the planning of this project. It layed out what I wanted to achieve and you could visually see what was possible and what was not.</p>
+
+<p> I took an aglie styled approach. I took time creating my user stories to keep within my time-frame and focus on the most important features and functionalities. I also included the acceptance criteria for each user story and tagged them based on their importance. If a user story began it was taken from the to do column and moved to in progress. Once each user story was completed it was then moved to the done box. I focused on not spending too much time on a particular ticket I was having issues with. I would move this back to to-do and try to complete the other tickets within the in progrss column. Using this method was brilliant for time-management. I was using my time well and at each point in the progress I had a clear understanding of the next steps and the overall goal.</p>
+
+<p> A part of my planning was using <a href="https://coolors.co/" target="_blank">coolors</a> to chose the correct colour palette.</p>
+
