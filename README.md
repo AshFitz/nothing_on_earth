@@ -144,3 +144,15 @@
 </p>
 
 <p> The wireframes for the project can be found <a href="https://github.com/AshFitz/nothing_on_earth/tree/main/wireframes" target="_blank">here.</a></p>
+
+### Business Model
+
+The business model for this store would be B2C, business to customer. This is because the business is selling the products directly to the customer.
+
+### Marketing 
+
+The site uses 2 different marketing strategies, social media and a newsletter that users can subscribe to.
+
+- Links to the social media page can be found in the footer. The Facebook link takes the user directly to the Noting On Earth business page. Find the page  [here](https://www.facebook.com/Nothing-On-Earth-110107378460514). Facebook deletes inactive business pages, if the page has been deleted, find the images here . ![Facebook](https://github.com/AshFitz/nothing_on_earth/tree/main/assets/images)
+
+- The newsletter sign up form can also be found in the footer. This service is powered by [Mailchimp](https://mailchimp.com/en-gb/). ![Newsletter](https://github.com/AshFitz/nothing_on_earth/blob/main/assets/images/mailchimp.JPG)
