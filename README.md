@@ -323,3 +323,232 @@ Default Country        | default_country        | CountryField    | blank_label=
 
 <p> A part of my planning was using <a href="https://coolors.co/" target="_blank">coolors</a> to chose the correct colour palette.</p>
 
+#### Feature Testing:
+
+#### User Testing
+<p> Testing was completed throughout the development process using chrom dev toos and user testing myself.</p>
+
+### User Profile
+
+#### Expectation
+
+Users can register, login and have a personal profile that contains their saved information and previous orders.
+
+#### Implementation
+
+Django-Allauth was used to handle the registration of users. User profile model has custom fields when registering. Profile that includes the features, my saved information and previous orders. 
+
+#### Test 
+
+  * When not logged in: Navigate to the sign up page via the nav
+	* When not logged in: Create an account and fill out all the required fields
+	* When not logged in: Navigate to login page via the nav and fill out all the required field
+  * When logged in: Navigate to profile page and view my saved information and previous orders.
+
+#### Result
+
+Users can signup and a profile can be created using signals. The user profile is interactive and the correct information is displayed.
+
+#### Verdict
+
+This test has passed.
+
+### Products 
+
+#### Expectation
+
+View a list of products, see information related to that product, sort products by price.
+
+#### Implementation
+
+A products page was created displaying a list of cards that provide a brief description of each product, the name and the collection.
+Within the nav there is also a nav item to select each individual collection to help improve the user experience.
+
+#### Test
+
+* Navigate to the products page via the nav and check products are displayed
+* Sort the product by price via the select option box
+* Click on the collection nav item to see that all links work
+* Navigate to the individual products to confirm it displays all the product information 
+
+#### Result
+
+All products have displayed as expected, sorting of the products by price displays the products in the correct order. Each individual product has a product detail page with all the relevant information.
+
+#### Verdict
+
+This test has passed.
+
+-----
+
+### Reviews
+
+#### Expectation
+
+A user will only have the ability to review an item they have already purchased. They will only have access to review the product once. They also have the ability to edit and delete the review they have submitted.
+
+#### Implementation
+
+A review section is displayed on the product details page under the product image and product information. This displays reviews that the user and other users have submitted. This also includes a link for the user to edit and delete their own review. A review app is built inside the products app and if the user has purchased this item they have the ability to submit a review. This is handled by template variables and if statements to confirm the user has met all of the conditions, only then will a review form display for the user.
+
+#### Test
+
+* When not logged in, I navigate to a product detail page, the product detail page displays a message stating that I can only leave a review when I purchase the item.
+* Register for an account or login, I navigate to a product detail page and a message is displayed stating that I can only leave a review when I purchase the item.
+* Purchase a product and then navigate back to that product detail page, review form is diplayd and a review can be submitted.
+* Reload the product detail page and my review is displayed. I can also edit and delete my review. When I delete my review it is no longer displayed. When I edit my review I am navigated to the edit review url and the edit form is displayed.
+* Toast messages are displayed when a review is updated or deleted. 
+
+#### Result
+
+Only users who have purchased the item have the ability to review that item.
+
+#### Verdict
+
+This test has passed.
+
+-----
+
+### Bag & Checkout
+
+#### Expectation
+
+Select products and add them to the bag. Remove products from bag, edit product quantities, select product size, purchase the bag using secure checkout and recieve confirmation email.
+
+#### Implementation
+
+Create a cart using session storage, user is notified of bag products,quantities and sizes via toast messages. The bag page confirms the products and product details. A form is created from the order model and this validates the information before processing the payment, this also informsthe user of any errors. After successful payment. A success page is displayed with the users order confirmation. A user can make a purchase with or without having an account registered.
+
+#### Test
+
+Testing for both a user logged in and a user not logged in.
+* Navigate to products page, select an item, selecting the relevant size and add it to the bag. A product can not be added to the bag without a size being selected
+* Upate thhe quantity of this product to 2
+* Navigate to another product and add it to the bag, repeat this step 3 times
+* The bag willbe located within the nav and will display the number of products within the bag. Select the bag
+* Review the products within the bag, edit the bag by updating a products size and quantity and also remove an item
+* Click to go to the payment page
+* Fill out the required information and use the stripe card details, ```4242 4242 4242 4242```
+* Payment sucess/fail will be displayed
+
+#### Result
+
+Products can be added to the bag easily. The user must select a size before adding it to the bag. A user is displayed with their bag quantity within the nav at all times. The user has the ability to edit their bag by updating the product size and quantity and the user can also delete a product from the bag. When checking out the user is displayed with crispy form fields and the grand total is clearly displayed including the price breakdown, delivery charge and/or sale discount. When the payment is processing a loading spinner is displayed to notify the user of the payment being processed. The user is notified with a payment confirmation and an email is also sent to the user with the confirmation of purchase.
+
+#### Verdict
+
+This test has passed.
+
+-----
+
+### Toast Messages
+
+#### Expectation
+
+Users are notified of certain interactions via pop-up messages, info, success or error.
+
+#### Implementation
+
+Bootstrap toast system is linked to django messages module. The user is notified of specific interactions throughout the site. The messages display different information to the user and they are styled to suit theme of the site.
+
+#### Test
+
+* Add a product to the bag
+* Edit a product in the bag
+* Delete a product in the bag
+* Login
+* Logout 
+* Register for an account
+* Submit the contact form
+
+
+#### Result
+
+Toast messages are displayed when the user carries out the above interactions. The user is either shown a success, info or error message to inform them of their interactions and make the user aware.
+
+#### Verdict
+
+This test has passed.
+
+-----
+
+### Contact Form
+
+#### Expectation
+
+Users have the ability to get in contact with the site owner by submitting a contact form. A user should have this ability regardless of if they have logged in or not.
+
+#### Implementation
+
+A contact page was created to display the contact form. This form has all nessecary fields for the user to submit their question.
+
+#### Test
+
+* Aa a user that has logged in and not logged in, navigate to the contact form and fill out the nessecary fields.
+* Submit the form and confirm it has been processed and delivered.
+* Check  the email was sent in the django console email backend.
+* Check the email was been sent in the django smtp email backend.
+* Toast message will be displayed to the user confirming the contact form was submitted.
+
+#### Result
+
+Users have the ability to enter their email and type in their query within the required filed. It has been processed and the contact form was submitted to the db incase it fails to send.
+
+#### Verdict
+
+This test has passed.
+
+-----
+
+### Stripe Payments
+
+#### Expectation
+
+Payments are handled securely to protect sensitive user information
+
+#### Implementation
+
+Using the stripe package and creating webhooks to verify with stripe. Follow the Boutique Ado project and the stripe documentation.
+
+#### Test
+
+Users have the ability to checkout and submit their order. Check the stipe dashboard for webhooks ensure payment intent and payment success was displayed on each order. 
+
+
+#### Result
+
+The payments are handled securely using the systems provided by stripe. No duplicate orders are created due to the webhook finding the order and submitting correctly.
+
+
+#### Verdict
+
+This test has passed
+
+-----
+
+### Browser Compatibility
+
+#### Expectation
+
+The application displays and functions on different browsers.
+
+#### Implementation
+
+Use of code that is widley supported.
+
+#### Test
+
+This application was developed using the brave and chrome dev tools. Testing of IE, Firefox and safari has not been completed.
+
+
+#### Result
+
+The application functions as expected on browsers.
+
+
+#### Verdict
+
+This test has passed.
+
+-----
+
