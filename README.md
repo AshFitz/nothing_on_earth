@@ -264,8 +264,8 @@ Timestamp      | timestamp      | DateTimeField   | auto_now_add=True
 
 #### The Profiles App:
 ##### User Profile Model
-           Name        |        Key in db       |   Field Type    |   Arguments
-          :-----:      |         :-----:        |     :-----:     |    :-----:
+ Name | Key in db|Field Type | Arguments
+:-----:|:-----:|:-----: | :-----:
 User                   | user                   | OneToOneField   | User, on_delete=models.CASCADE
 Default Phone Number   | default_phone_number   | CharField       | max_length=20, null=True, blank=True
 Default Street Address1| default_street_address1| CharField       | max_length=80, null=True, blank=True
