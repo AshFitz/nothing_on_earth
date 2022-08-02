@@ -71,6 +71,14 @@ header {
 
 }
 
+.mailchimp-form {
+    width: 250px;
+}
+
+#mc_embed_signup {
+    width: auto;
+}
+
 .product-header {
     justify-content: space-between;
 }
@@ -375,7 +383,7 @@ footer {
     height: min-content;
     border: 1pxsolidrgba(0,0,0,0.125);
     border-radius: 0.25rem;
-}
+    }
 
 .card-admin {
     flex-direction: column;
