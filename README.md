@@ -120,3 +120,7 @@
 * [Comfortaa](https://fonts.google.com/specimen/Comfortaa?subset=chinese-traditional)
 <p>I chose these font families for the website as they compliment the colour scheme, theme and the content well. They are easily readable and add to the clean and elegant style.
 </p>
+
+### Icons:
+<p>I have used multiple icons from font-awsome. They offer a wide range of icons and will help the user to identify the buttons use. For example, icons were used for edit and deleting comments.
+</p>
