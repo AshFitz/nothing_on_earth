@@ -190,7 +190,7 @@ header {
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: white;
-    box-shadow: 0 1px 3px 0 #e6ebf1;
+    box-shadow: 0 1px 3px 0 #CB807D;
     -webkit-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
 }
@@ -198,7 +198,7 @@ header {
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
-    box-shadow: 0 1px 3px 0 #cfd7df;
+    box-shadow: 0 1px 3px 0 #CB807D;
 }
 
 .StripeElement--webkit-autofill {
@@ -227,7 +227,7 @@ select option {
 
 select:invalid,
 select option[value=""] {
-    color: #aab7c4 !important;    
+    color: #CB807D !important;    
 }
 
 #loading-overlay {
@@ -253,7 +253,7 @@ select option[value=""] {
 
 .product-main-container {
     position: relative;
-    width: 350px;
+    width: 250px;
 }
 
 /* Product Form */
@@ -285,10 +285,6 @@ select option[value=""] {
 }
 
 /* Nav styling*/
-
-.burger-icon {
-
-}
 
 .mobile-nav-container {
     display: flex;
@@ -346,12 +342,13 @@ select option[value=""] {
     visibility: visible;
     z-index: 99;
     transform: translateX(0%)!important;
+    display: block;
 }
 
 .searcher {
     top:60px;
-    left: -893px;
-    min-width: 100vw;
+    left: -1471px;
+    min-width: 103vw;
 }
 
 /*Footer styling */
@@ -362,6 +359,7 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
+    font-family: 'Caveat', cursive;
 }
 
 /* Contact styling */
@@ -451,6 +449,9 @@ footer {
     border-radius: 0.25rem;
 }
 
+.select-size {
+    width: 25%;
+}
 /* Product detail styling */
 
 .product-detail-img{
@@ -519,17 +520,43 @@ footer {
 
 /* Media Queries */
 
-@media screen 
-and (max-width: 1280px){ 
-    
-}
+
 
 /* standard Ipad*/
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .searcher {
+        
+        left: -1401px;
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1365px){
+    .product-main-container {
+        width: 350px;
+    }
+
+    .searcher {
+        top: 60px;
+        left: -1628px;
+        min-width: 103vw; }
+}
+
+@media screen 
+and (max-width: 1280px){ 
+    .searcher {
+        left: -976px;
+    }
+}
+
 @media only screen 
-and (max-width:1200px) {
-
- }
-
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px){
+    .searcher {
+        top: 60px;
+        left: -1455px;
+        min-width: 103vw; 
+    }
+  } 
 
 @media (max-width: 991px) {
     .product-container {
@@ -562,24 +589,26 @@ and (max-width:1200px) {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
-    }
+    }   
 }
 
 
-
-/* Iphone 6/7/8 */
+/* Iphone x */
 @media only screen 
 and (max-width: 375px) 
 and (max-height: 812px) { 
-
+    .mobile-nav-side {
+        left: -367px;
+    }
 }
 
 /* Iphone 6/7/8 SE*/
 @media only screen 
   and (min-width: 375px) 
   and (max-width: 667px) { 
-
-
+    .searcher {
+        min-width: 103vw;
+    }
   }
 
 
@@ -587,14 +616,70 @@ and (max-height: 812px) {
 @media only screen 
   and (min-width: 414px) 
   and (max-width: 736px) { 
-
-
+    .searcher {
+        min-width: 103vw;
+    }
   }
 
 
 /* Iphone 5 / 5se only */
 @media screen and (min-width : 320px) 
 and (max-width : 568px) { 
+    .landing-page-container{
+        padding-top:88px;
+    }
 
+    .about-section{
+        width: 100%;
+        padding-right: 45px;
+        padding-left: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
+    .product-main-container {
+        width: 250px;
+    }
+
+    .collage-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .landing-collage-text {
+        font-size: 2rem;
+    }
+
+    .product-container {
+        padding-top: 10px;
+    }
+
+    .product-detail-img {
+        padding-top: 120px;
+    }
+
+    .select-size {
+        width: 30%;
+    }
+
+    .input-group.quantity-chooser {
+        width: 80%;
+    }
+
+    .detail-spacing {
+        padding-bottom: 12rem;
+    }
+
+    .bag-group {
+        padding-right:40px;
+    }
+
+    .searcher {
+        left: 13px;
+        min-width: 101vw;
+    }
+    
+    .btn-btn-mobile {
+        margin-bottom: 3px;
+    }
 }
