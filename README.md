@@ -212,4 +212,12 @@ Grand Total    | grand_total    | DecimalField    | max_digits=10, decimal_place
 Original Bag   | original_bag   | TextField       | null=False, blank=False, default=''
 Stripe PID     | stripe_pid     | CharField       | max_length=254, null=False, blank=False, default=''
 
+##### Order Line Item Model
+      Name     |    Key in db   |   Field Type    |   Arguments
+     :-----:   |     :-----:    |     :-----:     |    :-----:
+Order          | order          | ForeignKey      | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+Product        | product        | ForeignKey      | Product, null=False, blank=False, on_delete=models.CASCADE
+Product Size   | product_size   | CharField       | max_length=2, null=True, blank=True
+Quantity       | quantity       | IntegerField    | null=False, blank=False, default=0
+Line Item Total| lineitem_total | DecimalField    | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
