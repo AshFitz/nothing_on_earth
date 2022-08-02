@@ -4,3 +4,9 @@
 </p>
 
 <img src="https://github.com/AshFitz/nothing_on_earth/blob/main/assets/images/imagesresponsive.JPG">
+
+# User Experience
+
+### Project Goals:
+<p> The goal of this project is to offer a range of stand out dresses that can be worn on any occasion. The user will be thr ability to create an account, add items to their basket, make payments and have a profile to view the previous orders. The target audience are people who enjoy feminine and unique dresses. People who seek limited edition and artistic dresses.
+</p>
