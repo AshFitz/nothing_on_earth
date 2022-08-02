@@ -187,3 +187,29 @@ The keywords and phrases are below:
 
 These phrases can also be used in the metadata at the head of the page.
 
+### Database Design:
+* In the production version of we went the database is utilizing PostgreSQL and is hosted and provided by Heroku.
+
+#### The Checkout App:
+##### Order Model
+      Name     |    Key in db   |   Field Type    |   Arguments
+     :-----:   |     :-----:    |     :-----:     |    :-----:
+Order Number   | order_number   | CharField       | max_length=32, null=False, editable=False
+User Profile   | user_profile   | ForeignKey      | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'
+Full Name      | full_name      | CharField       | max_length=50, null=False, blank=False
+Email          | email          | EmailField      | max_length=254, null=False, blank=False
+Phone Number   | phone_number   | CharField       | max_length=20, null=False, blank=False
+Country        | country        | CountryField    | blank_label='Country *', null=False, blank=False
+Postcode       | postcode       | CharField       | max_length=20, null=True, blank=True
+Town or City   | town_or_city   | CharField       | max_length=40, null=False, blank=False
+Street Address1| street_address1| CharField       | max_length=80, null=False, blank=False
+Street Address2| street_address2| CharField       | max_length=80, null=True, blank=True
+County         | county         | CharField       | max_length=80, null=True, blank=True
+Date           | date           | DateTimeField   | max_length=80, null=True, blank=True
+Delivery Cost  | delivery_cost  | DecimalField    | max_digits=6, decimal_places=2, null=False, default=0
+Order Total    | order_total    | DecimalField    | max_digits=10, decimal_places=2, null=False, default=0
+Grand Total    | grand_total    | DecimalField    | max_digits=10, decimal_places=2, null=False, default=0
+Original Bag   | original_bag   | TextField       | null=False, blank=False, default=''
+Stripe PID     | stripe_pid     | CharField       | max_length=254, null=False, blank=False, default=''
+
+
