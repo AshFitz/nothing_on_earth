@@ -11,6 +11,11 @@
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=eden_balcony" class="dropdown-item">Eden Balcony</a></li>
       <li class="mobile-nav-link-items"><a href="{% url 'products' %}?collection=shell_bay" class="dropdown-item">Shell Bay</a></li>
       <h4 class="text-main-color">Account</h4>
+      <li class="nmobile-nav-link-items">
+        <a class="dropdown-item " href="{% url 'view_bag' %}">Bag
+      {% if product_count %}
+      <span class="">({{ product_count }})</span>{% endif %}</a>
+      </li>
       {% if request.user.is_authenticated %}
       {% if request.user.is_superuser %}
       <li class="mobile-nav-link-items"><a class="dropdown-item" href="{% url 'add_product' %}">Product Management <span class="sr-only">(current)</span></a></li>

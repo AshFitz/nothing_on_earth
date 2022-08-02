@@ -39,7 +39,7 @@
                     <a class="nav-link " href="{% url 'view_bag' %}">Bag
                 {% if product_count %}
                 <span class="">({{ product_count }})</span>{% endif %}</a>
-                    </li>
+                </li>
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <a class="nav-link" href="{% url 'add_product' %}">Admin<span class="sr-only">(current)</span></a>
