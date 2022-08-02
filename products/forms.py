@@ -4,7 +4,9 @@ from .models import Product, Collection, Review
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    Product form to populate all fields
+    """
     class Meta:
         model = Product
         fields = '__all__'
@@ -23,6 +25,9 @@ class ProductForm(forms.ModelForm):
 
 
 class ReviewForm(forms.ModelForm):
+    """
+    Review form class to create and populate a review form for user.
+    """
     class Meta:
         model = Review
         fields = ['comment']

@@ -2,6 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Collection(models.Model):
+    """
+    Model to define the collection name and friendly name
+    """
     name = models.CharField(max_length=254,null=True, blank=True)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -13,6 +16,9 @@ class Collection(models.Model):
 
 
 class Product(models.Model):
+    """
+    Model defined for each product in the database
+    """
     collection = models.ForeignKey('Collection', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
@@ -30,6 +36,9 @@ class Product(models.Model):
         return self.name
 
 class Review(models.Model):
+    """
+    Model to define the fields required to add a review to a product
+    """
     product = models.ForeignKey(Product, on_delete=models.CASCADE,
                                 null=True, blank=True,related_name='reviews')
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True,

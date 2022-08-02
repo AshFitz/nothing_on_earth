@@ -1,6 +1,9 @@
 from django.db import models
 
 class ContactForm(models.Model):
+    """
+    Model to define the fields required to create a contact form request in the database
+    """
     first_name = models.CharField(max_length=80, blank=False, null=False)
     last_name = models.CharField(max_length=80, blank=False, null=False)
     email = models.EmailField(max_length=254, null=False, blank=False)

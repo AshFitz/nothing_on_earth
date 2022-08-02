@@ -9,7 +9,6 @@ from checkout.models import Order
 from .models import Product, Collection, Review
 from .forms import ProductForm, ReviewForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -21,7 +20,7 @@ def all_products(request):
     direction = None
     sale = None
     newprice = None
-    
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -52,7 +51,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't search anything!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(details__icontains=query) | Q(collection__friendly_name__icontains=query)
             products = products.filter(queries)
 
@@ -112,7 +111,9 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """ 
+    Add a product to the store 
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that')
         return redirect(reverse('home'))
@@ -127,7 +128,7 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -138,7 +139,9 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the store """
+    """
+    Edit a product in the store
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that')
         return redirect(reverse('home'))
@@ -213,6 +216,9 @@ def add_review(request, product_id):
 
 
 def edit_review(request, product_id):
+    """
+    edit a product and update to the db
+    """
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(Review, user=request.user, product=product_id)
 
@@ -236,9 +242,10 @@ def edit_review(request, product_id):
 
 
 def delete_review(request, product_id):
+    """
+    Delete a product from products
+    """
     review = get_object_or_404(Review, user=request.user, product=product_id)
     review.delete()
     messages.info(request, 'Your review has been removed.')
     return redirect(reverse('product_detail', args=(product_id,)))
-
-

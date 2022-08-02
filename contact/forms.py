@@ -2,6 +2,10 @@ from django import forms
 from .models import ContactForm
 
 class Contact(forms.ModelForm):
+    """
+    Class to define the fields for contact form to instantiate
+    onto a page when contact form is called.
+    """
     class Meta:
         model = ContactForm
         fields = ('first_name', 'last_name', 'email', 'phone', 'message')

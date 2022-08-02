@@ -8,6 +8,11 @@ from .forms import Contact
 # Create your views here.
 
 def contact(request):
+    """
+    View to handle the contact page
+    instasiate form onto page and handle post request from user
+    if form is valid send email
+    """
     admin_email = settings.EMAIL_HOST_USER
     subject = render_to_string('emails/contact_request_subject.txt')
     
@@ -45,6 +50,10 @@ def contact(request):
 
 
 def contact_success(request):
+    """
+    contact_success to return the template,
+    page title and context of the view.
+    """
     template = 'contact/contact_success.html'
 
     return render(request, template)
