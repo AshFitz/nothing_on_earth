@@ -19,6 +19,7 @@ mobileBurger.click(function(){
 navBackground.click(function(){
     navBackground.removeClass('overlay-nav');
     mobileNav.removeClass('transition-right');
+    navBackground.css("display", "none")
 });
 
 deleteButton.click(function(){
