@@ -192,8 +192,8 @@ These phrases can also be used in the metadata at the head of the page.
 
 #### The Checkout App:
 ##### Order Model
-      Name     |    Key in db   |   Field Type    |   Arguments
-     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
 Order Number   | order_number   | CharField       | max_length=32, null=False, editable=False
 User Profile   | user_profile   | ForeignKey      | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'
 Full Name      | full_name      | CharField       | max_length=50, null=False, blank=False
@@ -213,8 +213,8 @@ Original Bag   | original_bag   | TextField       | null=False, blank=False, def
 Stripe PID     | stripe_pid     | CharField       | max_length=254, null=False, blank=False, default=''
 
 ##### Order Line Item Model
-      Name     |    Key in db   |   Field Type    |   Arguments
-     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
 Order          | order          | ForeignKey      | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
 Product        | product        | ForeignKey      | Product, null=False, blank=False, on_delete=models.CASCADE
 Product Size   | product_size   | CharField       | max_length=2, null=True, blank=True
@@ -223,8 +223,8 @@ Line Item Total| lineitem_total | DecimalField    | max_digits=6, decimal_places
 
 #### The Contact App:
 ##### Contact Form Model
-      Name     |    Key in db   |   Field Type    |   Arguments
-     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name|Key in db|Field Type |Arguments
+:-----:|:-----:|:-----:|:-----:
 First Name     | first_name     | CharField       | max_length=80, blank=False, null=False
 Last Name      | last_name      | CharField       | max_length=80, blank=False, null=False
 Email          | email          | EmailField      | max_length=254, null=False, blank=False
@@ -233,14 +233,14 @@ Message        | message        | TextField       | null=False, blank=False
 
 #### The Products App:
 ##### Collection Model
-      Name     |    Key in db   |   Field Type    |   Arguments
-     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
 Name           | name           | CharField       | max_length=254,null=True, blank=True
 Friendly Name  | friendly_name  | CharField       | max_length=254, null=True, blank=True
 
 ##### Product Model
-      Name     |    Key in db   |   Field Type    |   Arguments
-     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
 Collection     | collection     | ForeignKey      | 'Collection', null=True, blank=True, on_delete=models.SET_NULL
 SKU            | sku            | CharField       | max_length=254, null=True, blank=True
 Name           | name           | CharField       | max_length=254
@@ -255,8 +255,8 @@ Image          | image          | ImageField      | null=True, blank=True
 Image2         | image2         | ImageField      | null=True, blank=True
 
 ##### Review Model
-      Name     |    Key in db   |   Field Type    |   Arguments
-     :-----:   |     :-----:    |     :-----:     |    :-----:
+Name|Key in db|Field Type|Arguments
+:-----:|:-----:|:-----:|:-----:
 Product        | product        | ForeignKey      | Product, on_delete=models.CASCADE, null=True, blank=True,related_name='reviews'
 User           | user           | ForeignKey      | User, on_delete=models.CASCADE, null=True, blank=True, related_name='user_review'
 Comment        | comment        | TextField       | max_length=1000, blank=True, null=True
