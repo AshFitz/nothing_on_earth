@@ -156,3 +156,34 @@ The site uses 2 different marketing strategies, social media and a newsletter th
 - Links to the social media page can be found in the footer. The Facebook link takes the user directly to the Noting On Earth business page. Find the page  [here](https://www.facebook.com/Nothing-On-Earth-110107378460514). Facebook deletes inactive business pages, if the page has been deleted, find the images here . ![Facebook](https://github.com/AshFitz/nothing_on_earth/tree/main/assets/images)
 
 - The newsletter sign up form can also be found in the footer. This service is powered by [Mailchimp](https://mailchimp.com/en-gb/). ![Newsletter](https://github.com/AshFitz/nothing_on_earth/blob/main/assets/images/mailchimp.JPG)
+
+### Search Engine Optimisation
+
+I created a sitemap.xml and robots.txt file to help aid search engines locate the site. To keep user's information safe and  pages that may contain sensitive information has been included in the robots.txt.
+
+The keywords and phrases are below:
+
+#### Short Tail Keywords
+- Dress
+- Pretty dress
+- Womens dresses
+- Wedding dress
+- Midi dress
+- Mini dress
+- Long dress
+- Black dress
+- Pink dress
+- White dress
+- Frock
+- Gown
+
+#### Long Tail Keywords
+- Dresses for evening times
+- Dress for summer time
+- Dresses for parties
+- Feminine and elegant dresses
+- Dresses for all occasions
+- Dresses as a wedding guest
+
+These phrases can also be used in the metadata at the head of the page.
+
