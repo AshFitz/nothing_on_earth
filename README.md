@@ -291,3 +291,24 @@ Default Country        | default_country        | CountryField    | blank_label=
 * <p> A user will have he ability to sign up to a newsletter subscription. </p>
 * <p> A star rating within the review functionality.</p>
 * <p> A user will have the ability to save items that they like, to come back to them at a later stage without having to look through all the products agian.</p> 
+
+## Technologies Used:
+#### Languages:
+* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+* <a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a>
+* <a href="https://www.json.org/json-en.html" target="_blank">JSON</a>
+* <a href="https://www.python.org/" target="_blank">Python</a>
+
+#### Tools & Libraries:
+* <a href="https://www.djangoproject.com/" target="_blank">Django</a>
+* <a href="https://pip.pypa.io/en/stable/installation/" target="_blank">PIP</a>
+* <a href="https://jquery.com/" target="_blank">jQuery</a>
+* <a href="https://git-scm.com/" target="_blank">Git</a>
+* <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+* <a href="https://fontawesome.com/icons?d=gallery" target="_blank">Font-Awesome</a>
+* <a href="https://stripe.com/" target="_blank">Stripe</a>
+
+#### Databases:
+* <a href="https://www.postgresql.org/" target="_blank">PostgreSQL - Production</a>
+* <a href="https://www.sqlite.org/index.html" target="_blank">SQlite3 - Development</a>
