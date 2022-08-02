@@ -124,3 +124,13 @@
 ### Icons:
 <p>I have used multiple icons from font-awsome. They offer a wide range of icons and will help the user to identify the buttons use. For example, icons were used for edit and deleting comments.
 </p>
+
+### Colours:
+<p> I chose the colours below because they portray a feminine and elegant feel. They compliment themselves, the content and the product images well. The content is clearly readable and the site navigates well due to the colours. It increases the appeal of the website and UX. The colours used across the site are listed below.
+</p>
+
+* Primary Colour - White, #FFF.
+* Secondary Colour - Black, #000.
+* Tertiary Colour - Pink, #CB807D
+
+![Colors](https://github.com/AshFitz/nothing_on_earth/blob/main/assets/images/colors.png)
