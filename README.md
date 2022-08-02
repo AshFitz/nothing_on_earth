@@ -102,3 +102,10 @@
     * I want the user to be able to sort a specific collection of products so that the items match their preference
     * I want the user to be able to search for a product by name or description so that they can refine their search.
     * I want the user to view their searched results and the number of results so that they can view the refined products.
+
+### EPIC|Admin and Store Management
+
+* As an Admin:
+    * I can add a product so that I can add new items to my store.
+    * I can update a product so that I can edit the product details.
+    * I can delete a product so that I can remove any items that are no longer required.
