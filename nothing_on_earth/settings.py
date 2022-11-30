@@ -28,7 +28,9 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 # Update allowed hosts
 ALLOWED_HOSTS = ['nothing-on-earth.herokuapp.com', 'localhost', '8000-ashfitz-nothingonearth-vqmm1spyesz.ws-eu54.gitpod.io/']
-
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 
